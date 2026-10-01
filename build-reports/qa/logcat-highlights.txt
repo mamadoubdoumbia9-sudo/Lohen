@@ -1,80 +1,60 @@
-10-01 23:02:11.558  1866  1866 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-01 23:02:11.571  1866  1866 I AndroidRuntime: Using default boot image
-10-01 23:02:11.571  1866  1866 I AndroidRuntime: Leaving lock profiling enabled
-10-01 23:02:11.778   507   541 W system_server: Long monitor contention with owner Binder:507_11 (1767) at android.content.res.Configuration com.android.server.wm.ActivityTaskManagerService.getGlobalConfigurationForPid(int)(ActivityTaskManagerService.java:976) waiters=2 in void com.android.server.wm.WindowAnimator.lambda$new$1$WindowAnimator(long) for 143ms
-10-01 23:02:11.796   507  1234 W system_server: Long monitor contention with owner Binder:507_8 (988) at void com.android.server.am.ActivityManagerService.notifyPackageUse(java.lang.String, int)(ActivityManagerService.java:3134) waiters=0 in java.lang.String com.android.server.am.ActivityManagerService.checkContentProviderAccess(java.lang.String, int) for 163ms
-10-01 23:02:11.797   507  1562 W system_server: Long monitor contention with owner Binder:507_8 (988) at void com.android.server.am.ActivityManagerService.notifyPackageUse(java.lang.String, int)(ActivityManagerService.java:3134) waiters=4 in boolean com.android.server.am.ActivityManagerService.isAppStartModeDisabled(int, java.lang.String) for 139ms
-10-01 23:02:11.917  1866  1866 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-10-01 23:02:12.060   507  1767 W system_server: Long monitor contention with owner PackageManager (563) at void com.android.server.pm.PackageManagerService$PackageHandler.doHandleMessage(android.os.Message)(PackageManagerService.java:1797) waiters=8 in java.lang.String com.android.server.pm.PackageManagerService.getInstantAppPackageName(int) for 203ms
-10-01 23:02:12.060   507  1006 W system_server: Long monitor contention with owner PackageManager (563) at void com.android.server.pm.PackageManagerService$PackageHandler.doHandleMessage(android.os.Message)(PackageManagerService.java:1797) waiters=9 in android.content.pm.ProviderInfo com.android.server.pm.PackageManagerService.resolveContentProviderInternal(java.lang.String, int, int) for 197ms
-10-01 23:02:12.065   507   546 W system_server: Long monitor contention with owner ConnectivityServiceThread (653) at int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], int, android.os.Bundle, boolean, boolean, int)(ActivityManagerService.java:16749) waiters=3 in void com.android.server.am.ActivityManagerService$MainHandler.handleMessage(android.os.Message) for 265ms
-10-01 23:02:12.069   507   623 W system_server: Long monitor contention with owner ConnectivityServiceThread (653) at int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], int, android.os.Bundle, boolean, boolean, int)(ActivityManagerService.java:16749) waiters=4 in boolean com.android.server.am.ActivityManagerService.refContentProvider(android.os.IBinder, int, int) for 269ms
-10-01 23:02:12.071   507  1928 W system_server: Long monitor contention with owner ConnectivityServiceThread (653) at int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], int, android.os.Bundle, boolean, boolean, int)(ActivityManagerService.java:16749) waiters=5 in void com.android.server.am.ActivityManagerService.unregisterReceiver(android.content.IIntentReceiver) for 232ms
-10-01 23:02:12.071  1761  1811 W droid.messagin: Long monitor contention with owner AsyncTask #4 (1814) at android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean)(ActivityThread.java:6942) waiters=0 in android.app.ContentProviderHolder android.app.ActivityThread.installProvider(android.content.Context, android.app.ContentProviderHolder, android.content.pm.ProviderInfo, boolean, boolean, boolean) for 220ms
-10-01 23:02:12.076   507   554 W system_server: Long monitor contention with owner Binder:507_2 (535) at void com.android.server.wallpaper.WallpaperManagerService.setDimensionHints(int, int, java.lang.String, int)(WallpaperManagerService.java:2107) waiters=0 in com.android.server.wallpaper.WallpaperManagerService$WallpaperData com.android.server.wallpaper.WallpaperManagerService$WallpaperObserver.dataForEvent(boolean, boolean) for 192ms
-10-01 23:02:12.131  1866  1866 D AndroidRuntime: Shutting down VM
-10-01 23:02:12.262   507  1562 W system_server: Long monitor contention with owner Binder:507_A (1100) at void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int)(ActivityManagerService.java:16858) waiters=1 in void com.android.server.am.ActivityManagerService.publishService(android.os.IBinder, android.content.Intent, android.os.IBinder) for 122ms
-10-01 23:02:12.433   963  1979 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=32ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 01 Oct 2026 23:02:13 GMT], X-Android-Received-Millis=[1790895732432], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1790895732431]}
-10-01 23:02:12.441  1625  1625 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:188)
-10-01 23:02:12.441  1625  1625 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:188)
-10-01 23:02:12.441  1625  1625 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:188)
-10-01 23:02:12.441  1625  1625 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:188)
-10-01 23:02:12.472   963  1978 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 time=69ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 01 Oct 2026 23:02:13 GMT], X-Android-Received-Millis=[1790895732472], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1790895732466]}
-10-01 23:02:12.497  1472  1472 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1669 android.content.ContextWrapper.startService:720 android.content.ContextWrapper.startService:720 com.android.emulator.multidisplay.MultiDisplayServiceReceiver.onReceive:33 android.app.ActivityThread.handleReceiver:4032 
-10-01 23:02:12.762   507   546 I SystemServerTimingAsync: ssm.onUnlockedUser-0_com.android.server.content.ContentService$Lifecycle
-10-01 23:02:12.762   507   546 D SystemServerTimingAsync: ssm.onUnlockedUser-0_com.android.server.content.ContentService$Lifecycle took to complete: 0ms
-10-01 23:02:12.904  1425  2023 I Dialer  : VvmActivationTask - VVM content provider configured - vvm_type_cvvm
-10-01 23:02:13.125   963  2036 D NetworkMonitor/101: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=53ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 01 Oct 2026 23:02:13 GMT], X-Android-Received-Millis=[1790895733125], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1790895733119]}
-10-01 23:02:13.170   963  2035 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 time=37ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 01 Oct 2026 23:02:13 GMT], X-Android-Received-Millis=[1790895733170], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1790895733164]}
-10-01 23:02:13.300  1761  1813 I MessagingApp: Carrier configs loaded: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=-1, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=2147483647, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=1944, enableMMSDeliveryReports=false, userAgent=, mmsCloseConnection=true, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=, maxMessageSize=1048576, naiSuffix=, enableMMSReadReports=false, maxImageWidth=2592, uaProfUrl=, enabledMMS=false, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}] from resources+system for subId=1
-10-01 23:02:13.779   507   988 W system_server: Long monitor contention with owner NetworkPolicy (646) at void com.android.server.NetworkManagementService.setInterfaceQuota(java.lang.String, long)(NetworkManagementService.java:1219) waiters=0 in void com.android.server.NetworkManagementService.setUidCleartextNetworkPolicy(int, int) for 261ms
-10-01 23:02:14.407   507   563 V BackupManagerService: [UserID:0] restoreAtInstall pkg=com.esteban.lohen token=1 restoreSet=0
-10-01 23:02:14.420   507   545 W system_server: Long monitor contention with owner PackageManager (563) at void com.android.server.pm.PackageManagerService.updateSettingsInternalLI(com.android.server.pm.parsing.pkg.AndroidPackage, com.android.server.pm.PackageManagerService$InstallArgs, int[], com.android.server.pm.PackageManagerService$PackageInstalledInfo)(PackageManagerService.java:16213) waiters=0 in android.content.pm.ApplicationInfo com.android.server.pm.PackageManagerService.getApplicationInfoInternal(java.lang.String, int, int, int) for 174ms
-10-01 23:02:14.429   507  1570 W system_server: Long monitor contention with owner PackageManager (563) at void com.android.server.pm.PackageManagerService.updateSettingsInternalLI(com.android.server.pm.parsing.pkg.AndroidPackage, com.android.server.pm.PackageManagerService$InstallArgs, int[], com.android.server.pm.PackageManagerService$PackageInstalledInfo)(PackageManagerService.java:16213) waiters=1 in java.lang.String com.android.server.pm.PackageManagerService.getInstantAppPackageName(int) for 173ms
-10-01 23:02:14.429   507   537 W system_server: Long monitor contention with owner PackageManager (563) at void com.android.server.pm.PackageManagerService.updateSettingsInternalLI(com.android.server.pm.parsing.pkg.AndroidPackage, com.android.server.pm.PackageManagerService$InstallArgs, int[], com.android.server.pm.PackageManagerService$PackageInstalledInfo)(PackageManagerService.java:16213) waiters=2 in java.lang.String com.android.server.pm.PackageManagerService.getInstantAppPackageName(int) for 169ms
-10-01 23:02:14.475  1652  1652 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.esteban.lohen. Reason: package android.intent.action.PACKAGE_ADDED
-10-01 23:02:14.503   696   696 D AvrcpMediaPlayerList: Name of package changed: com.esteban.lohen
-10-01 23:02:14.656   507   786 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.esteban.lohen/.android.AndroidLauncher} from uid 2000
-10-01 23:02:14.823   507   547 I ActivityManager: Start proc 2204:com.esteban.lohen/u0a130 for pre-top-activity {com.esteban.lohen/com.esteban.lohen.android.AndroidLauncher}
-10-01 23:02:15.019   507   545 W system_server: Long monitor contention with owner NetworkPolicy (646) at void com.android.server.NetworkManagementService.removeInterfaceQuota(java.lang.String)(NetworkManagementService.java:1252) waiters=1 in void com.android.server.NetworkManagementService.setFirewallUidRule(int, int, int) for 355ms
-10-01 23:02:15.019   507   647 W system_server: Long monitor contention with owner android.bg (545) at boolean com.android.server.net.NetworkPolicyManagerService.isUidIdle(int)(NetworkPolicyManagerService.java:4150) waiters=0 in void com.android.server.net.NetworkPolicyManagerService.handleUidChanged(int, int, long) for 264ms
-10-01 23:02:15.153   351   351 E SurfaceFlinger: [Splash Screen com.esteban.lohen#0] rejecting buffer: bufWidth=1440, bufHeight=2560, front.active_legacy.{w=2560, h=1440}
-10-01 23:02:16.800  2204  2256 I Lohen   : boot: save v1 chapter=1
-10-01 23:02:16.960   507  1234 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.esteban.lohen flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
-10-01 23:02:16.961   507   546 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.esteban.lohen flg=0x4000010 (has extras) } to com.android.gallery3d/.app.PackagesMonitor
-10-01 23:02:17.011   507   545 D ArtManagerInternalImpl: /data/misc/iorapd/com.esteban.lohen/1/com.esteban.lohen.android.AndroidLauncher/compiled_traces/compiled_trace.pb doesn't exist
-10-01 23:02:17.017   507   545 I ActivityTaskManager: Displayed com.esteban.lohen/.android.AndroidLauncher: +2s354ms
-10-01 23:02:18.980  2204  2430 I chatty  : uid=10130(com.esteban.lohen) identical 1 line
-10-01 23:02:18.987  1652  1982 W ModernMediaScanner: Failed to apply ContentProviderOperation(type=insert uri=content://media/internal/file values={instance_id=null, compilation=null, disc_number=null, duration=12800, is_ringtone=1, album_artist=null, resolution=null, orientation=null, artist=<unknown>, author=null, height=null, is_drm=0, is_audiobook=0, date_modified=1683213431, writer=null, composer=null, datetaken=null, mime_type=audio/ogg, is_notification=0, bitrate=112000, cd_track_number=null, xmp=[], year=null, _data=/product/media/audio/ringtones/UrsaMinor.ogg, _size=185005, album=ringtones, genre=null, is_alarm=0, title=UrsaMinor, width=null, is_music=0, document_id=null, is_podcast=0, capture_framerate=null, num_tracks=1, original_document_id=null, media_type=2} exceptionAllowed)
-10-01 23:02:18.987  1652  1982 W ModernMediaScanner: 	at android.content.ContentProviderOperation.applyInternal(ContentProviderOperation.java:375)
-10-01 23:02:18.987  1652  1982 W ModernMediaScanner: 	at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:347)
-10-01 23:02:18.987  1652  1982 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2422)
-10-01 23:02:18.987  1652  1982 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2413)
-10-01 23:02:18.987  1652  1982 W ModernMediaScanner: 	at android.content.ContentResolver.applyBatch(ContentResolver.java:2186)
-10-01 23:02:19.667   434  2198 I iorapd  : Perfetto TraceBuffer saved to file: /data/misc/iorapd/com.esteban.lohen/1/com.esteban.lohen.android.AndroidLauncher/raw_traces/1790895739667147037.perfetto_trace.pb
-10-01 23:02:20.543  2204  2446 I chatty  : uid=10130(com.esteban.lohen) identical 1 line
-10-01 23:02:20.698  2204  2451 D ProfileInstaller: Installing profile for com.esteban.lohen
-10-01 23:02:22.042  2204  2256 I Content : validated: 6 chapters
-10-01 23:02:22.198  2204  2456 I chatty  : uid=10130(com.esteban.lohen) identical 1 line
-10-01 23:02:24.133   507   563 I AppsFilter: interaction: PackageSetting{a3897de com.esteban.lohen/10130} -> PackageSetting{c127dbf com.android.camera2/10112} BLOCKED
-10-01 23:02:24.133   507   563 I AppsFilter: interaction: PackageSetting{a3897de com.esteban.lohen/10130} -> PackageSetting{6e9ec8c com.android.gallery3d/10109} BLOCKED
-10-01 23:02:24.133   507   563 I AppsFilter: interaction: PackageSetting{a3897de com.esteban.lohen/10130} -> PackageSetting{7f48fd5 com.android.inputmethod.latin/10104} BLOCKED
-10-01 23:02:24.328   507   540 W system_server: Long monitor contention with owner main (507) at android.content.res.Resources android.app.ResourcesManager.createResources(android.os.IBinder, android.content.res.ResourcesKey, java.lang.ClassLoader)(ResourcesManager.java:842) waiters=0 in android.content.res.Resources android.app.ResourcesManager.createResources(android.os.IBinder, android.content.res.ResourcesKey, java.lang.ClassLoader) for 171ms
-10-01 23:02:24.336   507   545 W system_server: Long monitor contention with owner android.fg (537) at int com.android.server.pm.PackageManagerService$PackageManagerInternalImpl.getApplicationEnabledState(java.lang.String, int)(PackageManagerService.java:24933) waiters=3 in android.content.pm.ApplicationInfo com.android.server.pm.PackageManagerService.getApplicationInfoInternal(java.lang.String, int, int, int) for 177ms
-10-01 23:02:24.879  2204  2462 I chatty  : uid=10130(com.esteban.lohen) identical 1 line
-10-01 23:02:31.755   507   649 E WifiHealthMonitor: android.content.pm.PackageManager$NameNotFoundException: com.google.android.wifi
-10-01 23:02:33.186  2204  2490 I chatty  : uid=10130(com.esteban.lohen) identical 1 line
-10-01 23:02:49.167  2509  2509 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-01 23:02:49.178  2509  2509 I AndroidRuntime: Using default boot image
-10-01 23:02:49.178  2509  2509 I AndroidRuntime: Leaving lock profiling enabled
-10-01 23:02:49.401  2509  2509 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-10-01 23:02:49.498  2509  2509 D AndroidRuntime: Shutting down VM
-10-01 23:02:51.172  2204  2256 I Chapter : entered ch1
-10-01 23:03:04.693   507  2533 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~6G-YYsytF4WHKU3UxMIq_A==/com.esteban.lohen-csMulGQZASEu8uUIl0AWTA==/base.apk pkg=com.esteban.lohen isa=x86_64 dexoptFlags=boot_complete,debuggable,public,enable_hidden_api_checks targetFilter=verify oatDir=/data/app/~~6G-YYsytF4WHKU3UxMIq_A==/com.esteban.lohen-csMulGQZASEu8uUIl0AWTA==/oat classLoaderContext=PCL[]{}
-10-01 23:03:04.694   428   441 V installd: DexInv: --- BEGIN '/data/app/~~6G-YYsytF4WHKU3UxMIq_A==/com.esteban.lohen-csMulGQZASEu8uUIl0AWTA==/base.apk' ---
-10-01 23:03:04.746  2538  2538 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --debuggable --classpath-dir=/data/app/~~6G-YYsytF4WHKU3UxMIq_A==/com.esteban.lohen-csMulGQZASEu8uUIl0AWTA== --class-loader-context=PCL[]{} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
-10-01 23:03:04.945  2540  2540 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-01 23:03:04.966  2540  2540 I AndroidRuntime: Using default boot image
-10-01 23:03:04.966  2540  2540 I AndroidRuntime: Leaving lock profiling enabled
-10-01 23:03:05.491  2540  2540 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-10-01 23:03:05.509  2540  2540 D AndroidRuntime: Shutting down VM
+10-01 23:14:55.150  1899  1899 I AndroidRuntime: Using default boot image
+10-01 23:14:55.150  1899  1899 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:15:00.257  2261  2348 I Lohen   : boot: save v1 chapter=1
+10-01 23:15:03.467  2261  2348 I Content : validated: 6 chapters
+10-01 23:15:37.490  2494  2494 I AndroidRuntime: Using default boot image
+10-01 23:15:37.490  2494  2494 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:15:39.476  2261  2348 I Chapter : entered ch1
+10-01 23:15:54.615  2532  2532 I AndroidRuntime: Using default boot image
+10-01 23:15:54.615  2532  2532 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:15:56.563  2546  2546 I AndroidRuntime: Using default boot image
+10-01 23:15:56.563  2546  2546 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:15:58.387  2559  2559 I AndroidRuntime: Using default boot image
+10-01 23:15:58.388  2559  2559 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:00.409  2572  2572 I AndroidRuntime: Using default boot image
+10-01 23:16:00.409  2572  2572 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:02.612  2584  2584 I AndroidRuntime: Using default boot image
+10-01 23:16:02.612  2584  2584 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:02.930  2584  2595 I AndroidRuntime: NOTE: attach of thread 'Binder:2584_1' failed
+10-01 23:16:04.743  2596  2596 I AndroidRuntime: Using default boot image
+10-01 23:16:04.743  2596  2596 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:05.081  2596  2607 I AndroidRuntime: NOTE: attach of thread 'Binder:2596_1' failed
+10-01 23:16:06.653  2608  2608 I AndroidRuntime: Using default boot image
+10-01 23:16:06.653  2608  2608 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:08.737  2621  2621 I AndroidRuntime: Using default boot image
+10-01 23:16:08.737  2621  2621 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:10.480  2634  2634 I AndroidRuntime: Using default boot image
+10-01 23:16:10.480  2634  2634 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:12.667  2647  2647 I AndroidRuntime: Using default boot image
+10-01 23:16:12.668  2647  2647 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:14.717  2660  2660 I AndroidRuntime: Using default boot image
+10-01 23:16:14.717  2660  2660 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:32.964  2677  2677 I AndroidRuntime: Using default boot image
+10-01 23:16:32.964  2677  2677 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:51.411  2697  2697 I AndroidRuntime: Using default boot image
+10-01 23:16:51.411  2697  2697 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:53.306  2713  2713 I AndroidRuntime: Using default boot image
+10-01 23:16:53.306  2713  2713 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:55.216  2726  2726 I AndroidRuntime: Using default boot image
+10-01 23:16:55.216  2726  2726 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:57.028  2738  2738 I AndroidRuntime: Using default boot image
+10-01 23:16:57.028  2738  2738 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:16:58.954  2751  2751 I AndroidRuntime: Using default boot image
+10-01 23:16:58.954  2751  2751 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:15.148  2768  2768 I AndroidRuntime: Using default boot image
+10-01 23:17:15.148  2768  2768 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:16.786  2783  2783 I AndroidRuntime: Using default boot image
+10-01 23:17:16.786  2783  2783 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:18.661  2796  2796 I AndroidRuntime: Using default boot image
+10-01 23:17:18.661  2796  2796 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:20.686  2809  2809 I AndroidRuntime: Using default boot image
+10-01 23:17:20.686  2809  2809 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:22.428  2822  2822 I AndroidRuntime: Using default boot image
+10-01 23:17:22.428  2822  2822 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:24.270  2835  2835 I AndroidRuntime: Using default boot image
+10-01 23:17:24.270  2835  2835 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:26.294  2848  2848 I AndroidRuntime: Using default boot image
+10-01 23:17:26.294  2848  2848 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:28.262  2862  2862 I AndroidRuntime: Using default boot image
+10-01 23:17:28.262  2862  2862 I AndroidRuntime: Leaving lock profiling enabled
+10-01 23:17:29.924  2876  2876 I AndroidRuntime: Using default boot image
