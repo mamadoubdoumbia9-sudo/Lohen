@@ -1,0 +1,339 @@
+{
+  "chapters": [
+    {
+      "id": "ch1",
+      "index": 1,
+      "title": "Le Seuil",
+      "subtitle": "là où tout a commencé",
+      "background": "img/bg_ch1_seuil.jpg",
+      "music": "audio/music_night.ogg",
+      "ambient": "DUST",
+      "intro": [
+        { "t": "Un paquet t'attendait sur le lit. Pas de nom, pas d'adresse. Seulement une phrase tracée à la main : « ouvre-moi quand la nuit tombe »." },
+        { "t": "Tu l'ouvres. À l'intérieur, il n'y a pas d'objet. Il y a une porte. Et derrière cette porte, une chambre que tu reconnais sans l'avoir jamais vue." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Bonsoir, Lohen. Si tu entends ma voix, c'est que tu as accepté de me suivre. Je t'ai préparé un chemin. Six endroits. Six choses que je n'ai jamais réussi à te dire en face." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Regarde autour de toi. Touche ce qui t'appelle. Tout ici a été choisi pour toi." },
+        { "s": "Lohen", "p": "img/char_lohen.png", "t": "… Esteban ? Qu'est-ce que tu as encore inventé…" }
+      ],
+      "requiredHotspots": 3,
+      "hotspots": [
+        { "id": "fenetre", "x": 0.26, "y": 0.52, "r": 0.11, "label": "La fenêtre ouverte",
+          "memory": "Le premier soir où tu es resté jusqu'à l'aube.",
+          "lines": [
+            { "t": "La fenêtre est ouverte sur un ciel violet. Le rideau respire." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Tu avais dit que tu aimais dormir la fenêtre ouverte, même en hiver. J'ai mis trois nuits à comprendre que ce n'était pas pour l'air. C'était pour entendre la ville continuer sans nous." }
+          ]
+        },
+        { "id": "bureau", "x": 0.58, "y": 0.37, "r": 0.12, "label": "Le bureau et les lettres",
+          "memory": "Dix-sept brouillons jamais envoyés.",
+          "clue": "clue_lune",
+          "lines": [
+            { "t": "Des feuilles couvertes d'une écriture nerveuse. Certaines sont raturées jusqu'au papier." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Dix-sept. J'ai compté. Dix-sept lettres commencées et jamais données. Celle-ci sera la dix-huitième, et elle, tu la liras jusqu'au bout." },
+            { "t": "Sous les brouillons, un petit croissant de lune gravé dans le bois. À côté, un chiffre : 2." }
+          ]
+        },
+        { "id": "guirlande", "x": 0.42, "y": 0.73, "r": 0.09, "label": "La guirlande lumineuse",
+          "memory": "La panne de courant, et ta main qui cherche la mienne.",
+          "lines": [
+            { "t": "Une guirlande tiède clignote doucement, comme un cœur qui hésite." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "La nuit de la panne, tu as allumé toutes ces petites lumières une par une. Tu as dit : « voilà, maintenant on a nos propres étoiles. » Je crois que c'est exactement là que je suis tombé." }
+          ]
+        },
+        { "id": "lit", "x": 0.78, "y": 0.45, "r": 0.11, "label": "Le lit défait",
+          "memory": "Les dimanches qui ne commençaient jamais avant midi.",
+          "lines": [
+            { "t": "Les draps gardent encore la forme de quelqu'un." },
+            { "s": "Lohen", "p": "img/char_lohen.png", "t": "C'est… notre dimanche. Celui où on n'a rien fait du tout." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Le plus beau jour de cette année-là. On n'a rien fait, et c'était plein." }
+          ]
+        }
+      ],
+      "puzzlePrompt": "Remets nos souvenirs dans l'ordre où ils sont arrivés.",
+      "puzzle": {
+        "type": "order",
+        "prompt": "Quatre moments. Un seul ordre est le nôtre.",
+        "items": [
+          "La panne de courant et nos étoiles de guirlande",
+          "Le premier soir, la fenêtre ouverte jusqu'à l'aube",
+          "Le dimanche où on n'a rien fait du tout",
+          "Les dix-sept lettres cachées sous le bureau"
+        ],
+        "solution": [1, 0, 2, 3],
+        "hint": "Commence par la toute première nuit, finis par ce que je t'ai caché le plus longtemps."
+      },
+      "outro": [
+        { "t": "Le croissant de lune gravé se détache du bois et vient se poser dans ta paume. Il est tiède." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Garde-le. Chaque endroit t'offrira un signe et un chiffre. À la fin, ils ouvriront quelque chose." },
+        { "t": "La porte de la chambre donne maintenant sur un jardin qui n'existe pas." }
+      ],
+      "reward": { "symbol": "lune", "number": 2, "text": "Croissant de lune — chiffre 2" }
+    },
+
+    {
+      "id": "ch2",
+      "index": 2,
+      "title": "Le Jardin des Lanternes",
+      "subtitle": "ce que je n'osais pas dire à voix haute",
+      "background": "img/bg_ch2_jardin.jpg",
+      "music": "audio/music_night.ogg",
+      "ambient": "FIREFLY",
+      "intro": [
+        { "t": "Cinq lanternes éteintes bordent un chemin de pierre. Le brouillard dort sur l'eau." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Ce jardin, c'est l'endroit où je répétais ce que je voulais te dire. À voix haute, tout seul, comme un idiot." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Allume-les dans le bon ordre, et elles répéteront pour moi." }
+      ],
+      "requiredHotspots": 2,
+      "hotspots": [
+        { "id": "roses", "x": 0.13, "y": 0.42, "r": 0.1, "label": "Les roses sauvages",
+          "memory": "La rose volée dans un jardin inconnu.",
+          "lines": [
+            { "t": "Des roses rouges s'accrochent au fer forgé, trop belles pour être prudentes." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Je t'en avais volé une, un soir. Tu m'as grondé pendant dix minutes. Tu l'as gardée six mois." }
+          ]
+        },
+        { "id": "pont", "x": 0.68, "y": 0.35, "r": 0.11, "label": "Le petit pont de pierre",
+          "memory": "Le silence au milieu du pont.",
+          "clue": "clue_pont",
+          "lines": [
+            { "t": "Le pont enjambe une eau noire et calme. Au milieu, une inscription usée." },
+            { "t": "« La première s'allume la dernière. »" },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Tout ce que je voulais te dire tient dans cette phrase : je garde toujours l'essentiel pour la fin, parce que j'ai peur qu'il finisse." }
+          ]
+        },
+        { "id": "etang", "x": 0.86, "y": 0.22, "r": 0.1, "label": "Le reflet dans l'eau",
+          "memory": "Deux visages dans la même eau.",
+          "lines": [
+            { "t": "Dans l'eau, la lune se dédouble. Deux lunes, côte à côte, qui ne se touchent pas tout à fait." },
+            { "s": "Lohen", "p": "img/char_lohen.png", "t": "Elles sont si proches…" }
+          ]
+        }
+      ],
+      "puzzlePrompt": "Allume les lanternes dans l'ordre de la devinette.",
+      "puzzle": {
+        "type": "lanterns",
+        "prompt": "Touche les lanternes dans le bon ordre.",
+        "riddle": "« Celle du milieu s'éveille en premier. Puis la plus petite, tout au fond. Ensuite les deux voisines de la première, de la plus proche à la plus lointaine. La toute première du chemin s'allume la dernière. »",
+        "lanterns": [
+          { "x": 0.172, "y": 0.752 },
+          { "x": 0.374, "y": 0.618 },
+          { "x": 0.498, "y": 0.545 },
+          { "x": 0.573, "y": 0.503 },
+          { "x": 0.625, "y": 0.473 }
+        ],
+        "solution": [2, 4, 1, 3, 0],
+        "hint": "Le milieu du chemin, c'est la troisième lanterne. La plus petite est celle qui semble la plus loin."
+      },
+      "outro": [
+        { "t": "Les cinq flammes s'accordent. Le jardin entier respire en lumière." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Voilà. C'est ça que je n'arrivais pas à dire : tu as allumé des choses en moi dans un ordre que je ne contrôlais pas." },
+        { "t": "Une étoile de fer tombe d'une lanterne. Sur son dos, un chiffre : 4." }
+      ],
+      "reward": { "symbol": "etoile", "number": 4, "text": "Étoile de fer — chiffre 4" }
+    },
+
+    {
+      "id": "ch3",
+      "index": 3,
+      "title": "La Bibliothèque des Souvenirs",
+      "subtitle": "la devinette que tu m'avais posée",
+      "background": "img/bg_ch3_biblio.jpg",
+      "music": "audio/music_memory.ogg",
+      "ambient": "DUST",
+      "intro": [
+        { "t": "Des murs de livres, des photographies punaisées, des bougies qui tiennent le temps en otage." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Tu te souviens de la devinette que tu m'avais posée, au téléphone, à deux heures du matin ? J'avais séché. Tu avais ri pendant une semaine." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Je te la rends. Cette fois, c'est moi qui pose la question." }
+      ],
+      "requiredHotspots": 2,
+      "hotspots": [
+        { "id": "photos", "x": 0.72, "y": 0.6, "r": 0.11, "label": "Le mur de photographies",
+          "memory": "Toutes les photos où tu regardes ailleurs.",
+          "lines": [
+            { "t": "Des dizaines de photos. Sur presque toutes, tu regardes à côté de l'objectif." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Tu détestes poser. Alors je te prenais en traître, pendant que tu riais d'autre chose. Ce sont mes préférées." }
+          ]
+        },
+        { "id": "livre", "x": 0.3, "y": 0.47, "r": 0.1, "label": "Le livre corné",
+          "memory": "Le livre que tu n'as jamais fini.",
+          "clue": "clue_livre",
+          "lines": [
+            { "t": "Un roman, page 112 cornée. Dans la marge, une écriture minuscule : « il lui dit tout, sauf le principal »." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Je me suis reconnu dans cette phrase pendant deux ans." }
+          ]
+        },
+        { "id": "bougie", "x": 0.52, "y": 0.3, "r": 0.09, "label": "La bougie presque finie",
+          "memory": "Les nuits où on parlait jusqu'à ce que la cire s'éteigne.",
+          "lines": [
+            { "t": "La bougie n'a plus que quelques minutes à vivre. Elle éclaire quand même." },
+            { "s": "Lohen", "p": "img/char_lohen.png", "t": "Elle brûle encore. C'est déjà beaucoup." }
+          ]
+        }
+      ],
+      "puzzlePrompt": "Réponds à la devinette d'Esteban.",
+      "puzzle": {
+        "type": "riddle",
+        "prompt": "Compose la réponse en touchant les lettres.",
+        "riddle": "« Je nais dans le noir et je meurs dans le jour. On me cherche en levant la tête, on me trouve en fermant les yeux. Je suis ce que tu as mis dans une guirlande, un soir de panne. Qui suis-je ? »",
+        "answer": "ETOILE",
+        "letters": "ETOILERASNMU",
+        "hint": "Six lettres. Tu en as fabriqué toi-même, avec des petites ampoules, la nuit de la panne de courant."
+      },
+      "outro": [
+        { "t": "Le mot s'écrit de lui-même dans la poussière, en lettres de lumière." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Évidemment. C'était toujours toi, la réponse." },
+        { "t": "Un petit soleil de cuivre glisse d'entre deux livres. Gravé dessous : 1." }
+      ],
+      "reward": { "symbol": "soleil", "number": 1, "text": "Soleil de cuivre — chiffre 1" }
+    },
+
+    {
+      "id": "ch4",
+      "index": 4,
+      "title": "Le Ciel qu'on Regardait",
+      "subtitle": "relie ce que je n'ai jamais relié",
+      "background": "img/bg_ch4_ciel.jpg",
+      "music": "audio/music_memory.ogg",
+      "ambient": "STAR",
+      "intro": [
+        { "t": "La colline. Le télescope. Et au-dessus, un ciel si chargé qu'il semble pencher vers toi." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Tu m'avais dit qu'on pouvait inventer ses propres constellations, que personne n'avait le droit de nous en empêcher." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "J'en ai inventé une. Fais glisser ton doigt d'étoile en étoile, et tu verras ce que j'y ai caché." }
+      ],
+      "requiredHotspots": 1,
+      "hotspots": [
+        { "id": "telescope", "x": 0.2, "y": 0.33, "r": 0.1, "label": "Le vieux télescope",
+          "memory": "La nuit des Perséides.",
+          "clue": "clue_ciel",
+          "lines": [
+            { "t": "L'oculaire est encore tiède. Dans la lunette : une seule étoile, immense." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "La nuit des étoiles filantes, tu as fait un vœu et tu as refusé de me le dire. Je crois que j'ai fait le même." }
+          ]
+        },
+        { "id": "herbes", "x": 0.82, "y": 0.2, "r": 0.11, "label": "Les hautes herbes",
+          "memory": "Le froid, et ta veste sur mes épaules.",
+          "lines": [
+            { "t": "L'herbe est couchée, comme si deux personnes y étaient restées longtemps." },
+            { "s": "Lohen", "p": "img/char_lohen.png", "t": "Tu m'avais prêté ta veste. Tu as grelotté toute la nuit sans rien dire." }
+          ]
+        }
+      ],
+      "puzzlePrompt": "Relie les étoiles pour dessiner la constellation.",
+      "puzzle": {
+        "type": "constellation",
+        "prompt": "Glisse d'une étoile à l'autre, sans lever le doigt.",
+        "stars": [
+          { "x": 0.5, "y": 0.28 },
+          { "x": 0.38, "y": 0.44 },
+          { "x": 0.32, "y": 0.62 },
+          { "x": 0.38, "y": 0.76 },
+          { "x": 0.5, "y": 0.69 },
+          { "x": 0.62, "y": 0.76 },
+          { "x": 0.68, "y": 0.62 },
+          { "x": 0.62, "y": 0.44 }
+        ],
+        "path": [0, 1, 2, 3, 4, 5, 6, 7, 0],
+        "hint": "Pars de l'étoile la plus basse et remonte par la gauche : la forme que tu dessines, tout le monde la reconnaît."
+      },
+      "outro": [
+        { "t": "Les huit étoiles tiennent ensemble. La forme est évidente, maintenant : un cœur, tracé par-dessus la moitié du ciel." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Je l'ai appelée comme toi. Elle est au-dessus de nos têtes depuis le début, et personne d'autre ne le sait." },
+        { "t": "Une des étoiles se détache et se pose, froide et brillante, dans ta main. Elle porte un chiffre : 3." }
+      ],
+      "reward": { "symbol": "coeur", "number": 3, "text": "Cœur d'étoile — chiffre 3" }
+    },
+
+    {
+      "id": "ch5",
+      "index": 5,
+      "title": "La Boîte à Musique",
+      "subtitle": "écoute, c'est presque la fin",
+      "background": "img/bg_ch5_musique.jpg",
+      "music": "audio/music_memory.ogg",
+      "ambient": "SPARKLE",
+      "intro": [
+        { "t": "Une boîte à musique ouverte sur du velours rouge. La petite danseuse attend, immobile." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "C'est la mélodie que je fredonne sans m'en rendre compte quand tu n'es pas là. Tu me l'as fait remarquer un jour. Je ne l'ai jamais avoué." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Écoute-la, puis rends-la moi. Note après note." }
+      ],
+      "requiredHotspots": 1,
+      "hotspots": [
+        { "id": "partition", "x": 0.22, "y": 0.35, "r": 0.1, "label": "Les partitions",
+          "memory": "Une mélodie fredonnée à contretemps.",
+          "clue": "clue_musique",
+          "lines": [
+            { "t": "Des portées manuscrites, pleines de ratures. En bas de page : « pour L. — à jouer lentement »." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Je ne sais pas écrire la musique. J'ai essayé quand même." }
+          ]
+        },
+        { "id": "danseuse", "x": 0.52, "y": 0.52, "r": 0.1, "label": "La danseuse",
+          "memory": "Une danse maladroite dans une cuisine trop petite.",
+          "lines": [
+            { "t": "Elle tourne sur un pied, pour toujours, sans jamais se fatiguer." },
+            { "s": "Lohen", "p": "img/char_lohen.png", "t": "On a dansé une fois. Dans la cuisine. Tu m'as écrasé les deux pieds." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Je recommencerais demain." }
+          ]
+        }
+      ],
+      "puzzlePrompt": "Rejoue la mélodie d'Esteban.",
+      "puzzle": {
+        "type": "melody",
+        "prompt": "Écoute, puis rejoue. Chaque note a sa couleur : tu peux suivre des yeux si tu préfères.",
+        "sequence": [2, 0, 3, 1, 4, 2],
+        "hint": "La séquence est rejouée autant de fois que tu veux : touche « réécouter ». La dernière note est la plus aiguë, puis on revient au centre."
+      },
+      "outro": [
+        { "t": "La dernière note reste suspendue, longtemps, comme si elle refusait de finir." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Merci. Il reste un endroit. Le dernier. Prends tes quatre signes avec toi — chacun porte un chiffre, et les chiffres disent l'ordre." },
+        { "t": "Dans le couvercle de la boîte, une phrase gravée : « le coffre s'ouvre dans l'ordre des chiffres, du plus petit au plus grand »." }
+      ],
+      "reward": { "symbol": "note", "number": 0, "text": "Mélodie retrouvée — l'ordre des chiffres ouvre le coffre" }
+    },
+
+    {
+      "id": "ch6",
+      "index": 6,
+      "title": "Le Phare",
+      "subtitle": "la dix-huitième lettre",
+      "background": "img/bg_ch6_phare.jpg",
+      "music": "audio/music_letter.ogg",
+      "ambient": "DUST",
+      "intro": [
+        { "t": "La mer est rose. Le jour se lève pour la première fois depuis le début de ce voyage." },
+        { "s": "Esteban", "p": "img/char_esteban.png", "t": "Voilà. C'est ici que je m'arrête de tourner autour." },
+        { "t": "Sur le bureau : un coffre fermé par quatre symboles, et une enveloppe scellée de cire rouge." }
+      ],
+      "requiredHotspots": 1,
+      "hotspots": [
+        { "id": "fenetre6", "x": 0.3, "y": 0.55, "r": 0.11, "label": "La fenêtre ronde",
+          "memory": "Le premier matin après la plus longue nuit.",
+          "lines": [
+            { "t": "Dehors, la mer est calme comme quelqu'un qui a fini de pleurer." },
+            { "s": "Lohen", "p": "img/char_lohen.png", "t": "Il fait jour." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "Oui. C'était le but." }
+          ]
+        },
+        { "id": "fleurs", "x": 0.82, "y": 0.62, "r": 0.1, "label": "Les fleurs séchées",
+          "memory": "La rose volée, six mois plus tard.",
+          "lines": [
+            { "t": "Suspendue la tête en bas, une rose rouge, séchée avec soin." },
+            { "s": "Esteban", "p": "img/char_esteban.png", "t": "C'est la même. Celle du jardin. Tu vois que je n'invente rien." }
+          ]
+        }
+      ],
+      "puzzlePrompt": "Ouvre le coffre avec les quatre signes.",
+      "puzzle": {
+        "type": "code",
+        "prompt": "Place les quatre signes dans l'ordre de leurs chiffres, du plus petit au plus grand.",
+        "riddle": "Soleil 1 · Lune 2 · Cœur 3 · Étoile 4",
+        "symbols": ["soleil", "lune", "coeur", "etoile"],
+        "solution": ["soleil", "lune", "coeur", "etoile"],
+        "hint": "Ouvre ton journal : chaque signe que tu as reçu porte un chiffre. Du plus petit au plus grand, de gauche à droite."
+      },
+      "outro": [
+        { "t": "Le coffre s'ouvre sans bruit. À l'intérieur, une seule chose : la lettre." }
+      ],
+      "reward": { "symbol": "lettre", "number": 0, "text": "La dix-huitième lettre" }
+    }
+  ]
+}
