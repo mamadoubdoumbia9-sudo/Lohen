@@ -35,8 +35,8 @@ public class OrderPuzzle extends Puzzle {
         order = new int[items.length];
         // deterministic, never already-solved starting arrangement
         for (int k = 0; k < items.length; k++) order[k] = (k + 2) % items.length;
-        baseY = 520f;
-        checkY = baseY - items.length * (cardH + gap) - 40f;
+        baseY = 620f;
+        checkY = baseY - (items.length - 1) * (cardH + gap) - 46f - checkH;
     }
 
     private float cardY(int slot) { return baseY - slot * (cardH + gap); }
