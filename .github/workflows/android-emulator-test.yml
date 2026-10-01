@@ -2,6 +2,11 @@ name: Android Emulator QA
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ "arena/01a0f998-lohen" ]
+    paths:
+      - 'ci/**'
+      - '.github/workflows/android-emulator-test.yml'
 
 concurrency:
   group: android-emulator
