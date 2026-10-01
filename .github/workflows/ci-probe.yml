@@ -1,0 +1,17 @@
+name: CI Probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "arena/01a0f998-lohen" ]
+    paths: [ ".github/workflows/ci-probe.yml" ]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          java -version
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          ls $ANDROID_HOME/build-tools || true
+          ls $ANDROID_HOME/platforms || true
+          which gradle && gradle --version || echo "no gradle"
+          echo "KVM:"; ls -l /dev/kvm || echo nokvm
