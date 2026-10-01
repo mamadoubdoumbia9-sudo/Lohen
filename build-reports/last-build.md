@@ -1,6 +1,6 @@
 # Build report
-date: Thu Oct  1 23:01:59 UTC 2026
-commit: f5eac01e6375c0fe3a88599d5080fea8f9b39028
+date: Thu Oct  1 23:13:45 UTC 2026
+commit: d76d571acca345743c1bda651bb07bb151a34bd0
 tests_outcome: success
 assemble_outcome: success
 
@@ -50,9 +50,9 @@ ContentTest > everyReferencedAssetExists PASSED
 ContentTest > contentValidates PASSED
 
 ContentTest > letterIsARealLetter PASSED
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790895644198.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790896344646.json
 
-BUILD SUCCESSFUL in 36s
+BUILD SUCCESSFUL in 38s
 3 actionable tasks: 3 executed
 
 ## build.log (tail)
@@ -80,19 +80,19 @@ Build was configured to prefer settings repositories over project repositories b
 > Task :android:mapDebugSourceSetPaths
 > Task :android:generateDebugResources
 > Task :android:packageDebugResources
-> Task :android:mergeDebugResources
 > Task :android:createDebugCompatibleScreenManifests
 > Task :android:extractDeepLinksDebug
 > Task :android:parseDebugLocalResources
+> Task :android:mergeDebugResources
 > Task :android:processDebugMainManifest
 > Task :android:processDebugManifest
 > Task :android:mergeDebugShaders
-> Task :android:processDebugManifestForPackage
 > Task :android:compileDebugShaders NO-SOURCE
 > Task :android:generateDebugAssets UP-TO-DATE
 > Task :android:mergeDebugAssets
-> Task :android:processDebugResources
+> Task :android:processDebugManifestForPackage
 > Task :android:compressDebugAssets
+> Task :android:processDebugResources
 > Task :android:desugarDebugFileDependencies
 
 > Task :android:compileDebugJavaWithJavac
@@ -105,8 +105,8 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :android:checkDebugDuplicateClasses
 > Task :android:mergeDebugJavaResource
 > Task :android:copyAndroidNatives
-> Task :android:mergeProjectDexDebug
 > Task :android:mergeDebugJniLibFolders
+> Task :android:mergeProjectDexDebug
 > Task :android:mergeLibDexDebug
 > Task :android:mergeDebugNativeLibs
 > Task :android:validateSigningDebug
@@ -120,15 +120,15 @@ Unable to strip the following libraries, packaging them as they are: libgdx-free
 > Task :android:packageDebug
 > Task :android:createDebugApkListingFileRedirect
 > Task :android:assembleDebug
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790895676842.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790896380004.json
 [Incubating] Problems report is available at: file:///home/runner/work/Lohen/Lohen/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 45s
+BUILD SUCCESSFUL in 48s
 37 actionable tasks: 36 executed, 1 up-to-date
 
 ## apk
 total 11840
--rw-r--r-- 1 runner runner 12117496 Oct  1 23:01 android-debug.apk
--rw-r--r-- 1 runner runner      405 Oct  1 23:01 output-metadata.json
-45979f1f5161f96e1854115ee164828b0a356527991b0e4fe50bd962fb7fa609  dist/PourLohen-debug.apk
+-rw-r--r-- 1 runner runner 12118151 Oct  1 23:13 android-debug.apk
+-rw-r--r-- 1 runner runner      405 Oct  1 23:13 output-metadata.json
+8374d5bd480518e58222e5f7cd782b8363b2ffe500ec86d28e91249a77bb2bce  dist/PourLohen-debug.apk
 12M	dist/PourLohen-debug.apk
