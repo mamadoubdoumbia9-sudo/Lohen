@@ -43,6 +43,7 @@ public class ChapterScreen extends BaseScreen {
         super(game);
         this.chapter = game.content.chapter(chapterIndex);
         game.state.unlockChapter(chapterIndex);
+        Gdx.app.log("Milestone", "chapter-enter " + chapterIndex);
 
         solveBtn = new TouchButton("", UiKit.W / 2f - 320f, 150f, 640f, 104f);
         solveBtn.primary = true;
@@ -427,6 +428,7 @@ public class ChapterScreen extends BaseScreen {
     }
 
     private void advanceAfterOutro() {
+        Gdx.app.log("Milestone", "chapter-complete " + chapter.index);
         game.audio.tap();
         continueBtn.visible = false;
         if (chapter.index < 6) {

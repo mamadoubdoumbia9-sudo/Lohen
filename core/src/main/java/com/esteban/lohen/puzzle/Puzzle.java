@@ -62,6 +62,7 @@ public abstract class Puzzle {
 
     protected void succeed(float x, float y) {
         if (solved) return;
+        com.badlogic.gdx.Gdx.app.log("Milestone", "puzzle-solved " + getClass().getSimpleName());
         solved = true;
         feedback = -1f;
         audio.unlock();

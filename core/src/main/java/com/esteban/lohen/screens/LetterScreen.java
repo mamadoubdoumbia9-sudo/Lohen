@@ -1,5 +1,6 @@
 package com.esteban.lohen.screens;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Interpolation;
@@ -42,6 +43,7 @@ public class LetterScreen extends BaseScreen {
     public LetterScreen(LohenGame game) {
         super(game);
         letter = game.content.letter;
+        Gdx.app.log("Milestone", "letter-open");
         game.audio.playCue("hd_letter", "audio/music_letter.ogg");
         game.state.letterUnlocked = true;
         game.state.save();
@@ -134,6 +136,7 @@ public class LetterScreen extends BaseScreen {
                     stage = Stage.END;
                     stageTime = 0;
                     replayBtn.visible = true;
+                    Gdx.app.log("Milestone", "letter-end");
                     game.state.finished = true;
                     game.state.save();
                 }

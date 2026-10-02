@@ -111,13 +111,16 @@ taphs 0.78 0.45 ; sleep 1 ; line 2
 tapv 800 202 ; sleep 2
 shot 22-ch4-puzzle-constellation
 # multi-point drag through the eight stars and back to the first
-D=$(dx 480); E=$(dy 374.8)
+# Star positions come from chapters.json as normalised {x, y} with y measured
+# from the TOP, while the puzzle places them at (1-y)*900 in virtual space
+# (origin bottom-left). The virtual Y values below are already converted.
+D=$(dx 480); E=$(dy 525.2)
 adb shell input motionevent DOWN $D $E ; sleep 0.4
-for P in "326.4 501.5" "249.6 644" "326.4 754.9" "480 699.5" "633.6 754.9" "710.4 644" "633.6 501.5" "480 374.8"; do
+for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"; do
   set -- $P
   adb shell input motionevent MOVE "$(dx "$1")" "$(dy "$2")" ; sleep 0.45
 done
-adb shell input motionevent UP "$(dx 480)" "$(dy 374.8)" ; sleep 2
+adb shell input motionevent UP "$(dx 480)" "$(dy 525.2)" ; sleep 2
 shot 23-ch4-solved
 line 3
 sleep 2 ; shot 24-ch4-reward
@@ -164,12 +167,28 @@ tapv 800 172 ; sleep 5             # "Ouvrir la lettre"
 
 echo "== la lettre =="
 shot 34-letter-opening
-for i in 35 36 37 38 39 40 41 42 43; do sleep 14 ; shot "$i-letter"; done
-sleep 20 ; shot 44-letter-closing
-sleep 18 ; shot 45-letter-end
+# 13 paragraphs, each waiting for Esteban's recorded voice to finish
+for i in 35 36 37 38 39 40 41 42 43; do sleep 18 ; shot "$i-letter"; done
+sleep 30 ; shot 44-letter-closing
+sleep 30 ; shot 45-letter-end
 
 echo "== logs =="
 adb logcat -d > "$OUT/logcat.txt"
+grep -F "Milestone" "$OUT/logcat.txt" | sed "s/.*Milestone[: ]*//" | awk "!seen[\$0]++" > "$OUT/milestones.txt" || true
+echo "--- milestones reached:"; cat "$OUT/milestones.txt"
+MISSING=""
+for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" \
+         "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" \
+         "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" \
+         "letter-open" "letter-end"; do
+  grep -qF "$M" "$OUT/milestones.txt" || MISSING="$MISSING|$M"
+done
+if [ -n "$MISSING" ]; then
+  echo "MISSING MILESTONES:$MISSING" | tr "|" "\n" > "$OUT/missing-milestones.txt"
+  cat "$OUT/missing-milestones.txt"
+else
+  echo "all milestones reached" > "$OUT/missing-milestones.txt"
+fi
 grep -E " (I|E|W) (Lohen|Chapter|Content|AndroidRuntime)" "$OUT/logcat.txt" | head -60 > "$OUT/logcat-highlights.txt" || true
 grep -c "FATAL EXCEPTION" "$OUT/logcat.txt" > "$OUT/fatal-count.txt" || echo 0 > "$OUT/fatal-count.txt"
 if adb shell pidof $PKG > /dev/null; then echo alive > "$OUT/result.txt"; else echo died > "$OUT/result.txt"; fi

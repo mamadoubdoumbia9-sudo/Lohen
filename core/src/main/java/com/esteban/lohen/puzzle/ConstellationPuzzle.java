@@ -42,11 +42,19 @@ public class ConstellationPuzzle extends Puzzle {
 
     @Override public float dim() { return 0.25f; }
 
+    /**
+     * Nearest star within reach, not the first one found: two stars of the
+     * heart are only 135 px apart, so a first-match test could return the
+     * wrong one for a finger sitting between them.
+     */
     private int starAt(float x, float y) {
+        int best = -1;
+        float bestD2 = 130f * 130f;
         for (int i = 0; i < stars.length; i++) {
-            if (stars[i].dst2(x, y) < 120f * 120f) return i;
+            float d2 = stars[i].dst2(x, y);
+            if (d2 < bestD2) { bestD2 = d2; best = i; }
         }
-        return -1;
+        return best;
     }
 
     @Override
