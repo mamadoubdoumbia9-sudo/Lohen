@@ -43,6 +43,7 @@ jobs:
           ls -l /dev/kvm
 
       - name: Run the game on an emulator
+        timeout-minutes: 30
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 30

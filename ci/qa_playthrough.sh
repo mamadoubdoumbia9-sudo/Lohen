@@ -5,12 +5,22 @@
 # (1600x900, origin bottom-left) are mapped to real device pixels at runtime.
 set -u
 
+# an adb call that hangs (flaky emulator IPC) must never freeze the run;
+# 60s is generous for taps/logcat, 90s for APK install and screencaps
+adb() { timeout 90 command adb "$@"; }
+
 PKG=com.esteban.lohen
 ACT=$PKG/.android.AndroidLauncher
 OUT=/tmp/qa
 mkdir -p "$OUT"
 
 adb wait-for-device
+boot=$SECONDS
+while [ $SECONDS -lt $((boot+420)) ]; do
+  [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\\r')" = "1" ] && break
+  sleep 5
+done
+echo "boot_completed after $((SECONDS-boot))s"
 adb shell input keyevent 82 || true
 
 SIZE=$(adb shell wm size | tr -d '\r' | awk '{print $3}')
