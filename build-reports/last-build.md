@@ -1,6 +1,6 @@
 # Build report
-date: Fri Oct  2 21:33:20 UTC 2026
-commit: ffdf45643527ad8e186bc5ba96b6bf18ecbee21e
+date: Fri Oct  2 21:53:12 UTC 2026
+commit: 1425560a53b406f961665105192e8400977149ad
 tests_outcome: success
 assemble_outcome: success
 
@@ -50,9 +50,9 @@ ContentTest > everyReferencedAssetExists PASSED
 ContentTest > contentValidates PASSED
 
 ContentTest > letterIsARealLetter PASSED
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790976725217.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790977940945.json
 
-BUILD SUCCESSFUL in 35s
+BUILD SUCCESSFUL in 25s
 3 actionable tasks: 3 executed
 
 ## build.log (tail)
@@ -80,9 +80,9 @@ Build was configured to prefer settings repositories over project repositories b
 > Task :android:mapDebugSourceSetPaths
 > Task :android:generateDebugResources
 > Task :android:packageDebugResources
-> Task :android:mergeDebugResources
 > Task :android:createDebugCompatibleScreenManifests
 > Task :android:extractDeepLinksDebug
+> Task :android:mergeDebugResources
 > Task :android:parseDebugLocalResources
 > Task :android:processDebugMainManifest
 > Task :android:processDebugManifest
@@ -120,15 +120,15 @@ Unable to strip the following libraries, packaging them as they are: libgdx-free
 > Task :android:packageDebug
 > Task :android:createDebugApkListingFileRedirect
 > Task :android:assembleDebug
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790976758209.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790977965234.json
 [Incubating] Problems report is available at: file:///home/runner/work/Lohen/Lohen/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 45s
+BUILD SUCCESSFUL in 29s
 37 actionable tasks: 36 executed, 1 up-to-date
 
 ## apk
 total 15536
--rw-r--r-- 1 runner runner 15901825 Oct  2 21:33 android-debug.apk
--rw-r--r-- 1 runner runner      405 Oct  2 21:33 output-metadata.json
-8787b56191fb3fdaf67d10d5cc0af3a2f2e3b72c13a4317886ee7fcd853a1707  dist/PourLohen-debug.apk
+-rw-r--r-- 1 runner runner 15901828 Oct  2 21:53 android-debug.apk
+-rw-r--r-- 1 runner runner      405 Oct  2 21:53 output-metadata.json
+573e10749a55286751fd8b684cbe2004d786d5d05c3e6edaa919350a577a1e7c  dist/PourLohen-debug.apk
 16M	dist/PourLohen-debug.apk
