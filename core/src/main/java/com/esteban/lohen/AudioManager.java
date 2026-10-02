@@ -18,6 +18,65 @@ public class AudioManager implements Disposable {
         this.assets = assets; this.state = state;
     }
 
+    /** HD lossless cue names, by chapter index (1..6). See tools/gen_audio_hd.py. */
+    private static final String[] HD_CHAPTER = {
+            "hd_title", "hd_ch1_seuil", "hd_ch2_jardin", "hd_ch3_biblio",
+            "hd_ch4_ciel", "hd_ch5_musique", "hd_ch6_phare"
+    };
+
+    /** Resolves to the lossless 48 kHz cue when the full build shipped it. */
+    public static String hd(String name) {
+        if (name == null) return null;
+        String path = "audio/hd/" + name + ".flac";
+        return com.badlogic.gdx.Gdx.files.internal(path).exists() ? path : null;
+    }
+
+    public void playChapterMusic(int chapterIndex, String fallback) {
+        String name = (chapterIndex >= 0 && chapterIndex < HD_CHAPTER.length)
+                ? HD_CHAPTER[chapterIndex] : null;
+        String hd = hd(name);
+        playMusic(hd != null ? hd : fallback);
+    }
+
+    public void playCue(String hdName, String fallback) {
+        String hd = hd(hdName);
+        playMusic(hd != null ? hd : fallback);
+    }
+
+    // ------------------------------------------------------------- voice-over
+    private Music voice;
+
+    /** Plays a narration clip (voice/<name>.flac) over the music, if shipped. */
+    public void speak(String name) {
+        stopVoice();
+        String path = "voice/" + name + ".flac";
+        com.badlogic.gdx.files.FileHandle fh = com.badlogic.gdx.Gdx.files.internal(path);
+        if (!fh.exists()) return;
+        try {
+            voice = com.badlogic.gdx.Gdx.audio.newMusic(fh);
+            voice.setVolume(Math.min(1f, state.sfxVolume + 0.15f));
+            voice.play();
+        } catch (Throwable t) {
+            com.badlogic.gdx.Gdx.app.error("Audio", "voice " + name + ": " + t);
+            voice = null;
+        }
+    }
+
+    public boolean isSpeaking() {
+        try { return voice != null && voice.isPlaying(); } catch (Throwable t) { return false; }
+    }
+
+    public void pauseVoice() { if (voice != null) { try { voice.pause(); } catch (Throwable ignored) { } } }
+
+    public void resumeVoice() { if (voice != null) { try { voice.play(); } catch (Throwable ignored) { } } }
+
+    public void stopVoice() {
+        if (voice != null) {
+            try { voice.stop(); voice.dispose(); } catch (Throwable ignored) { }
+            voice = null;
+        }
+    }
+
     public void playMusic(String path) {
         if (path == null) { stopMusic(); return; }
         if (path.equals(currentPath) && current != null && current.isPlaying()) return;
@@ -73,5 +132,5 @@ public class AudioManager implements Disposable {
     public void sparkle() { sfx("audio/sfx_sparkle.ogg", 0.7f, 1f); }
     public void note(int index) { sfx("audio/note_" + (1 + (index % 5)) + ".ogg", 0.9f, 1f); }
 
-    @Override public void dispose() { stopMusic(); }
+    @Override public void dispose() { stopVoice(); stopMusic(); }
 }

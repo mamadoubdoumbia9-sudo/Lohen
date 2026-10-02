@@ -41,12 +41,24 @@ public class LanternPuzzle extends Puzzle {
 
     @Override public float dim() { return 0.22f; }
 
+    /** Nearest lantern within reach: neighbours in the painting can overlap. */
+    private int nearest(float x, float y) {
+        int best = -1;
+        float bestD = Float.MAX_VALUE;
+        for (int i = 0; i < lx.length; i++) {
+            float dx = x - lx[i], dy = y - ly[i];
+            float d = dx * dx + dy * dy;
+            if (d < bestD) { bestD = d; best = i; }
+        }
+        return (best >= 0 && bestD < 150f * 150f) ? best : -1;
+    }
+
     @Override
     public void touchDown(float x, float y) {
         if (solved || resetTimer > 0) return;
+        int hit = nearest(x, y);
         for (int i = 0; i < lx.length; i++) {
-            float dx = x - lx[i], dy = y - ly[i];
-            if (dx * dx + dy * dy < 110f * 110f) {
+            if (i == hit) {
                 if (lit[i] > 0.1f) { audio.tap(); return; }
                 if (solution[progress] == i) {
                     lit[i] = 0.001f;

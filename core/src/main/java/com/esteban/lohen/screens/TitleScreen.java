@@ -148,7 +148,13 @@ public class TitleScreen extends BaseScreen {
         fadeTo(new Runnable() {
             public void run() {
                 game.fx.clear();
-                game.switchTo(new ChapterScreen(game, index));
+                if (index == 1) {
+                    game.switchTo(new CutsceneScreen(game, "intro", new Runnable() {
+                        public void run() { game.switchTo(new ChapterScreen(game, index)); }
+                    }));
+                } else {
+                    game.switchTo(new ChapterScreen(game, index));
+                }
             }
         });
     }

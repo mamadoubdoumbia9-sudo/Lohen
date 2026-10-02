@@ -28,6 +28,14 @@ android {
         resources.excludes += ['META-INF/robovm/ios/robovm.xml', 'META-INF/DEPENDENCY', 'META-INF/LICENSE*']
     }
 
+    // The heavy content (cutscene frames, FLAC score, PNG masters) is already
+    // compressed. Storing it uncompressed keeps the build fast and, more
+    // importantly, lets Android stream it straight from the APK with
+    // AssetFileDescriptor instead of inflating it at runtime.
+    androidResources {
+        noCompress += ['jpg', 'jpeg', 'png', 'flac', 'ogg', 'ttf']
+    }
+
     buildTypes {
         debug { minifyEnabled false }
         release {

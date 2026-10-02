@@ -61,7 +61,7 @@ public class ChapterScreen extends BaseScreen {
 
         for (Content.Dialog d : chapter.intro) dialogue.push(d.speaker, d.text, d.portrait);
         dialogue.speedMultiplier = game.state.textSpeed;
-        game.audio.playMusic(chapter.music);
+        game.audio.playChapterMusic(chapter.index, chapter.music);
         game.state.currentChapter = chapter.index;
         game.state.save();
         Gdx.app.log("Chapter", "entered " + chapter.id);
@@ -434,7 +434,9 @@ public class ChapterScreen extends BaseScreen {
             fadeTo(new Runnable() {
                 public void run() {
                     game.fx.clear();
-                    game.switchTo(new ChapterScreen(game, next));
+                    game.switchTo(new CutsceneScreen(game, "ch" + next, new Runnable() {
+                        public void run() { game.switchTo(new ChapterScreen(game, next)); }
+                    }));
                 }
             });
         } else {
@@ -443,7 +445,9 @@ public class ChapterScreen extends BaseScreen {
             fadeTo(new Runnable() {
                 public void run() {
                     game.fx.clear();
-                    game.switchTo(new LetterScreen(game));
+                    game.switchTo(new CutsceneScreen(game, "letter", new Runnable() {
+                        public void run() { game.switchTo(new LetterScreen(game)); }
+                    }));
                 }
             });
         }

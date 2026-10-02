@@ -42,7 +42,7 @@ public class LetterScreen extends BaseScreen {
     public LetterScreen(LohenGame game) {
         super(game);
         letter = game.content.letter;
-        game.audio.playMusic("audio/music_letter.ogg");
+        game.audio.playCue("hd_letter", "audio/music_letter.ogg");
         game.state.letterUnlocked = true;
         game.state.save();
         pauseBtn = new TouchButton("Pause", UiKit.W - 250f, UiKit.H - 110f, 210f, 84f);
@@ -87,6 +87,10 @@ public class LetterScreen extends BaseScreen {
         end();
     }
 
+    private void syncVoicePause() {
+        if (paused) game.audio.pauseVoice(); else game.audio.resumeVoice();
+    }
+
     // ------------------------------------------------------------ progression
     private void advance(float dt) {
         switch (stage) {
@@ -107,16 +111,22 @@ public class LetterScreen extends BaseScreen {
                         revealed = Math.min(s.length(), revealed + dt * CPS * game.state.textSpeed);
                         return;
                     }
+                    // wait for Esteban's recorded voice to finish the paragraph
+                    if (game.audio.isSpeaking()) return;
                     if (stageTime > 1.1f) pushNextParagraph();
                 }
                 break;
             case CLOSING_1:
                 closingAlpha1 = Math.min(1f, closingAlpha1 + dt * 0.5f);
-                if (stageTime > 6.5f) { stage = Stage.CLOSING_2; stageTime = 0; game.audio.sparkle(); }
+                if (stageTime > 6.5f && !game.audio.isSpeaking()) {
+                    stage = Stage.CLOSING_2; stageTime = 0;
+                    game.audio.sparkle();
+                    game.audio.speak("closing_2");
+                }
                 break;
             case CLOSING_2:
                 closingAlpha2 = Math.min(1f, closingAlpha2 + dt * 0.5f);
-                if (stageTime > 6.0f) { stage = Stage.SIGNED; stageTime = 0; }
+                if (stageTime > 6.0f && !game.audio.isSpeaking()) { stage = Stage.SIGNED; stageTime = 0; }
                 break;
             case SIGNED:
                 signAlpha = Math.min(1f, signAlpha + dt * 0.6f);
@@ -139,6 +149,7 @@ public class LetterScreen extends BaseScreen {
             stage = Stage.CLOSING_1;
             stageTime = 0;
             page.clear();
+            game.audio.speak("closing_1");
             game.audio.page();
             game.fx.burst(Fx.Kind.SPARK, UiKit.W / 2f, UiKit.H / 2f, 26);
             return;
@@ -150,6 +161,7 @@ public class LetterScreen extends BaseScreen {
             game.audio.page();
         }
         page.add(next);
+        game.audio.speak(String.format("letter_%02d", nextParagraph));
         revealingIndex = page.size - 1;
         revealed = 0f;
         nextParagraph++;
@@ -270,9 +282,9 @@ public class LetterScreen extends BaseScreen {
             restart();
             return;
         }
-        if (pauseBtn.touchUp(x, y)) { paused = !paused; game.audio.tap(); return; }
+        if (pauseBtn.touchUp(x, y)) { paused = !paused; syncVoicePause(); game.audio.tap(); return; }
         // a tap on the letter itself only pauses/resumes: the text is never skipped
-        if (stage == Stage.READING) paused = !paused;
+        if (stage == Stage.READING) { paused = !paused; syncVoicePause(); }
     }
 
     private void restart() {

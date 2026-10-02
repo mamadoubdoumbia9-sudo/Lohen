@@ -59,7 +59,7 @@ public class LoadingScreen extends BaseScreen {
         if (ready) {
             readyTimer += dt;
             if (readyTimer > 0.6f) {
-                game.audio.playMusic("audio/music_title.ogg");
+                game.audio.playCue("hd_title", "audio/music_title.ogg");
                 game.switchTo(new TitleScreen(game));
                 return;
             }

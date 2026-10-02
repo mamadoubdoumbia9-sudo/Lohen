@@ -1,0 +1,137 @@
+name: Android Full Build (HD content + Release)
+
+# The full build generates the heavy, legitimate content on the runner
+# (pre-rendered cutscenes, lossless soundtrack, HD art masters), assembles the
+# APK and publishes it as a GitHub Release asset. None of that content is
+# committed: GitHub rejects files above 100 MB, releases accept up to 2 GB.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "arena/01a0f998-lohen" ]
+    paths:
+      - "ci/release/**"
+
+concurrency:
+  group: android-full
+  cancel-in-progress: true
+
+jobs:
+  full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/01a0f998-lohen
+          fetch-depth: 0
+
+      - name: Free disk space
+        run: |
+          df -h /
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android/sdk/ndk || true
+          df -h /
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Python content toolchain
+        run: pip install --quiet numpy pillow soundfile
+
+      - name: Generate cutscenes (pre-rendered frame sequences)
+        run: |
+          set -o pipefail
+          python3 tools/gen_cutscenes.py 2>&1 | tail -n 40
+
+      - name: Generate HD lossless soundtrack
+        run: |
+          set -o pipefail
+          python3 tools/gen_audio_hd.py 2>&1 | tail -n 20
+
+      - name: Generate HD art masters
+        run: |
+          set -o pipefail
+          python3 tools/gen_hd_art.py 2>&1 | tail -n 20
+
+      - name: Content inventory
+        id: inv
+        run: |
+          {
+            echo "### assets"
+            du -sh android/assets/* | sort -h
+            echo
+            echo "total: $(du -sh android/assets | cut -f1)"
+            echo "files: $(find android/assets -type f | wc -l)"
+          } > /tmp/inventory.txt
+          cat /tmp/inventory.txt
+
+      - name: Assemble full debug APK
+        id: assemble
+        run: |
+          set -o pipefail
+          gradle :android:assembleDebug --no-daemon --stacktrace 2>&1 | tail -n 60
+
+      - name: Inspect APK
+        id: apk
+        run: |
+          APK=android/build/outputs/apk/debug/android-debug.apk
+          ls -l "$APK"
+          SIZE=$(stat -c%s "$APK")
+          echo "size_bytes=$SIZE" >> "$GITHUB_OUTPUT"
+          echo "size_h=$(numfmt --to=iec --suffix=B "$SIZE")" >> "$GITHUB_OUTPUT"
+          echo "sha=$(sha256sum "$APK" | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          mkdir -p build-reports
+          {
+            echo "# Full build report"
+            echo
+            echo "- date: $(date -u)"
+            echo "- commit: $GITHUB_SHA"
+            echo "- apk: PourLohen-full-debug.apk"
+            echo "- size: $(numfmt --to=iec --suffix=B "$SIZE") ($SIZE bytes)"
+            echo "- sha256: $(sha256sum "$APK" | cut -d' ' -f1)"
+            echo
+            cat /tmp/inventory.txt
+          } > build-reports/full-build.md
+          cp "$APK" /tmp/PourLohen-full-debug.apk
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="full-v${{ github.run_number }}"
+          gh release create "$TAG" \
+            --target "$GITHUB_SHA" \
+            --title "Pour Lohen — build complet ${{ steps.apk.outputs.size_h }}" \
+            --notes "APK de debug installable (signature de debug).
+Taille : ${{ steps.apk.outputs.size_h }}
+SHA-256 : \`${{ steps.apk.outputs.sha }}\`
+
+Contenu : 6 chapitres jouables, 7 cinematiques pre-rendues 1920x1080,
+bande originale lossless 48 kHz, masters d'illustration HD, voix off de la lettre.
+
+Installation : telecharger le .apk sur le telephone, autoriser les sources
+inconnues, ouvrir le fichier." \
+            /tmp/PourLohen-full-debug.apk#PourLohen-full-debug.apk
+
+      - name: Push report back to branch
+        if: always()
+        run: |
+          git config user.name "lohen-ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add -f build-reports/full-build.md || true
+          git commit -m "ci: full build report [skip ci]" || echo "nothing to commit"
+          git pull --rebase origin arena/01a0f998-lohen || true
+          git push origin HEAD:arena/01a0f998-lohen

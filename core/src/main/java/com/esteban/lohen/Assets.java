@@ -55,7 +55,43 @@ public class Assets implements Disposable {
     public boolean update() { return manager.update(16); }
     public float progress() { return manager.getProgress(); }
 
-    public Texture tex(String path) {
+    /**
+     * HD tier: the full build ships 2048px lossless PNG masters under img/hd/.
+     * When one exists for the requested image it is used instead of the
+     * compressed version, transparently for every screen.
+     */
+    private String hdPath(String path) {
+        if (!path.startsWith("img/") || path.startsWith("img/hd/")) return path;
+        String name = path.substring(4);
+        if (!name.startsWith("bg_") && !name.startsWith("paper_")) return path;
+        int dot = name.lastIndexOf('.');
+        if (dot > 0) name = name.substring(0, dot);
+        String hd = "img/hd/" + name + ".png";
+        Boolean known = hdCache.get(hd);
+        if (known == null) {
+            known = Gdx.files.internal(hd).exists();
+            hdCache.put(hd, known);
+        }
+        return known ? hd : path;
+    }
+
+    private final java.util.HashMap<String, Boolean> hdCache = new java.util.HashMap<String, Boolean>();
+    private final com.badlogic.gdx.utils.Array<String> hdLru = new com.badlogic.gdx.utils.Array<String>();
+    private static final int HD_LIVE = 2;
+
+    /** Keeps at most HD_LIVE lossless masters resident: they are 2048px RGBA. */
+    private void trimHdCache(String justLoaded) {
+        hdLru.removeValue(justLoaded, false);
+        hdLru.add(justLoaded);
+        while (hdLru.size > HD_LIVE) {
+            String old = hdLru.removeIndex(0);
+            Texture t = textureCache.remove(old);
+            if (t != null) t.dispose();
+        }
+    }
+
+    public Texture tex(String rawPath) {
+        String path = hdPath(rawPath);
         if (manager.isLoaded(path, Texture.class)) {
             Texture t = manager.get(path, Texture.class);
             t.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
@@ -67,6 +103,7 @@ public class Assets implements Disposable {
             Texture t = new Texture(Gdx.files.internal(path), true);
             t.setFilter(Texture.TextureFilter.MipMapLinearLinear, Texture.TextureFilter.Linear);
             textureCache.put(path, t);
+            if (path.startsWith("img/hd/")) trimHdCache(path);
             return t;
         } catch (Throwable e) {
             Gdx.app.error("Assets", "missing texture " + path, e);
@@ -78,6 +115,8 @@ public class Assets implements Disposable {
         }
     }
 
+    private final java.util.HashMap<String, Music> extraMusic = new java.util.HashMap<String, Music>();
+
     public Sound sound(String path) {
         if (manager.isLoaded(path, Sound.class)) return manager.get(path, Sound.class);
         return null;
@@ -85,10 +124,25 @@ public class Assets implements Disposable {
 
     public Music music(String path) {
         if (manager.isLoaded(path, Music.class)) return manager.get(path, Music.class);
-        return null;
+        Music extra = extraMusic.get(path);
+        if (extra != null) return extra;
+        // HD tier tracks are streamed on demand instead of preloaded: they are
+        // large lossless files and only one plays at a time.
+        com.badlogic.gdx.files.FileHandle fh = com.badlogic.gdx.Gdx.files.internal(path);
+        if (!fh.exists()) return null;
+        try {
+            Music m = com.badlogic.gdx.Gdx.audio.newMusic(fh);
+            extraMusic.put(path, m);
+            return m;
+        } catch (Throwable t) {
+            com.badlogic.gdx.Gdx.app.error("Assets", "music " + path + ": " + t);
+            return null;
+        }
     }
 
     @Override public void dispose() {
+        for (Music m : extraMusic.values()) { try { m.dispose(); } catch (Throwable ignored) { } }
+        extraMusic.clear();
         for (Texture t : textureCache.values()) t.dispose();
         textureCache.clear();
         manager.dispose();
