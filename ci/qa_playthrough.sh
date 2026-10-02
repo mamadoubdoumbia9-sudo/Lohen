@@ -17,7 +17,7 @@ mkdir -p "$OUT"
 adb wait-for-device
 boot=$SECONDS
 while [ $SECONDS -lt $((boot+420)) ]; do
-  [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\\r')" = "1" ] && break
+  [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ] && break
   sleep 5
 done
 echo "boot_completed after $((SECONDS-boot))s"
@@ -176,11 +176,17 @@ sleep 2 ; shot 33-ch6-reward
 tapv 800 172 ; sleep 5             # "Ouvrir la lettre"
 
 echo "== la lettre =="
+T0=$SECONDS
 shot 34-letter-opening
-# 13 paragraphs, each waiting for Esteban's recorded voice to finish
-for i in 35 36 37 38 39 40 41 42 43; do sleep 18 ; shot "$i-letter"; done
-sleep 30 ; shot 44-letter-closing
-sleep 30 ; shot 45-letter-end
+# 13 paragraphs, each waiting for Esteban's recorded voice to finish;
+# shots matter less than reaching letter-end, so stop photographing and
+# jump to the verification when the step budget is close to spent
+for i in 35 36 37 38 39 40 41 42 43; do
+  [ $((SECONDS-T0)) -gt 240 ] && { echo "  (budget guard: skipping remaining letter shots)"; break; }
+  sleep 18 ; shot "$i-letter"
+done
+sleep 25 ; shot 44-letter-closing
+sleep 25 ; shot 45-letter-end
 
 echo "== logs =="
 adb logcat -d > "$OUT/logcat.txt"

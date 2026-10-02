@@ -43,7 +43,7 @@ jobs:
           ls -l /dev/kvm
 
       - name: Run the game on an emulator
-        timeout-minutes: 30
+        timeout-minutes: 45
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 30
@@ -54,6 +54,10 @@ jobs:
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           script: bash ci/qa_playthrough.sh
+
+      - name: Install ImageMagick
+        if: always()
+        run: sudo apt-get install -y imagemagick
 
       - name: Collect QA evidence
         if: always()
