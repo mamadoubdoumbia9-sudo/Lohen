@@ -110,21 +110,28 @@ jobs:
       - name: Publish GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
+          SIZE_H: ${{ steps.apk.outputs.size_h }}
+          SHA: ${{ steps.apk.outputs.sha }}
         run: |
-          TAG="full-v${{ github.run_number }}"
+          TAG="full-v${GITHUB_RUN_NUMBER}"
+          {
+            echo "APK de debug installable (signee avec la cle de debug Android)."
+            echo
+            echo "- Taille : ${SIZE_H}"
+            echo "- SHA-256 : ${SHA}"
+            echo
+            echo "Contenu : 6 chapitres jouables, 7 cinematiques pre-rendues 1920x1080,"
+            echo "bande originale lossless 48 kHz, masters d'illustration HD,"
+            echo "voix off de la lettre finale."
+            echo
+            echo "Installation : telecharger le .apk sur le telephone, autoriser les"
+            echo "sources inconnues, ouvrir le fichier."
+          } > /tmp/notes.md
           gh release create "$TAG" \
             --target "$GITHUB_SHA" \
-            --title "Pour Lohen — build complet ${{ steps.apk.outputs.size_h }}" \
-            --notes "APK de debug installable (signature de debug).
-Taille : ${{ steps.apk.outputs.size_h }}
-SHA-256 : \`${{ steps.apk.outputs.sha }}\`
-
-Contenu : 6 chapitres jouables, 7 cinematiques pre-rendues 1920x1080,
-bande originale lossless 48 kHz, masters d'illustration HD, voix off de la lettre.
-
-Installation : telecharger le .apk sur le telephone, autoriser les sources
-inconnues, ouvrir le fichier." \
-            /tmp/PourLohen-full-debug.apk#PourLohen-full-debug.apk
+            --title "Pour Lohen - build complet ${SIZE_H}" \
+            --notes-file /tmp/notes.md \
+            "/tmp/PourLohen-full-debug.apk#PourLohen-full-debug.apk"
 
       - name: Push report back to branch
         if: always()
