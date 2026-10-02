@@ -1,6 +1,6 @@
 # Build report
-date: Fri Oct  2 21:53:12 UTC 2026
-commit: 1425560a53b406f961665105192e8400977149ad
+date: Fri Oct  2 22:09:00 UTC 2026
+commit: c65e1fd5fd8bfc965f4aac22c33808ddbe7f48b7
 tests_outcome: success
 assemble_outcome: success
 
@@ -50,9 +50,9 @@ ContentTest > everyReferencedAssetExists PASSED
 ContentTest > contentValidates PASSED
 
 ContentTest > letterIsARealLetter PASSED
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790977940945.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790978881691.json
 
-BUILD SUCCESSFUL in 25s
+BUILD SUCCESSFUL in 28s
 3 actionable tasks: 3 executed
 
 ## build.log (tail)
@@ -80,15 +80,15 @@ Build was configured to prefer settings repositories over project repositories b
 > Task :android:mapDebugSourceSetPaths
 > Task :android:generateDebugResources
 > Task :android:packageDebugResources
+> Task :android:mergeDebugResources
 > Task :android:createDebugCompatibleScreenManifests
 > Task :android:extractDeepLinksDebug
-> Task :android:mergeDebugResources
 > Task :android:parseDebugLocalResources
 > Task :android:processDebugMainManifest
 > Task :android:processDebugManifest
 > Task :android:mergeDebugShaders
-> Task :android:compileDebugShaders NO-SOURCE
 > Task :android:processDebugManifestForPackage
+> Task :android:compileDebugShaders NO-SOURCE
 > Task :android:generateDebugAssets UP-TO-DATE
 > Task :android:mergeDebugAssets
 > Task :android:processDebugResources
@@ -105,8 +105,8 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :android:checkDebugDuplicateClasses
 > Task :android:mergeDebugJavaResource
 > Task :android:copyAndroidNatives
-> Task :android:mergeProjectDexDebug
 > Task :android:mergeDebugJniLibFolders
+> Task :android:mergeProjectDexDebug
 > Task :android:mergeLibDexDebug
 > Task :android:mergeDebugNativeLibs
 > Task :android:validateSigningDebug
@@ -120,15 +120,15 @@ Unable to strip the following libraries, packaging them as they are: libgdx-free
 > Task :android:packageDebug
 > Task :android:createDebugApkListingFileRedirect
 > Task :android:assembleDebug
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790977965234.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790978908022.json
 [Incubating] Problems report is available at: file:///home/runner/work/Lohen/Lohen/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 29s
+BUILD SUCCESSFUL in 35s
 37 actionable tasks: 36 executed, 1 up-to-date
 
 ## apk
 total 15536
--rw-r--r-- 1 runner runner 15901828 Oct  2 21:53 android-debug.apk
--rw-r--r-- 1 runner runner      405 Oct  2 21:53 output-metadata.json
-573e10749a55286751fd8b684cbe2004d786d5d05c3e6edaa919350a577a1e7c  dist/PourLohen-debug.apk
+-rw-r--r-- 1 runner runner 15901826 Oct  2 22:08 android-debug.apk
+-rw-r--r-- 1 runner runner      405 Oct  2 22:08 output-metadata.json
+470beeb2217a6067b9e326138dbe98b78ad668bbccaa5a2fafa023d18682d4d5  dist/PourLohen-debug.apk
 16M	dist/PourLohen-debug.apk
