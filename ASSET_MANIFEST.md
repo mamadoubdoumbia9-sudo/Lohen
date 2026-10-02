@@ -51,11 +51,14 @@ reverb), exported to OGG/Vorbis.
 
 ## 4. Voice-over (in the repository)
 
-`android/assets/voice/letter_NN.flac` — Esteban's letter read aloud in French,
-one lossless clip per paragraph, synthesised with the project's registered
-narration voice. `LetterScreen` plays each clip as its paragraph appears and
-waits for it to end before moving on; the text is identical to
-`data/letter.json`, word for word.
+`android/assets/voice/` — Esteban's letter read aloud in French: one lossless
+clip per paragraph (`letter_00.flac` … `letter_12.flac`) plus the two closing
+lines (`closing_1.flac`, `closing_2.flac`, which read the texts spoken under
+the written « je t'aime ❤️ » and « j'espère que tu as apprécié mon cadeau »).
+All 15 clips are synthesised with the project's registered narration voice.
+`LetterScreen` plays each clip as its paragraph appears and waits for it to
+end before moving on; the text is identical to `data/letter.json`, word for
+word.
 
 ## 5. Heavy tiers — generated on the CI runner, shipped in the Release APK
 

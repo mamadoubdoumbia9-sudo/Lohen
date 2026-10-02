@@ -19,6 +19,10 @@ build logs stored under `build-reports/`.
 | Issue | Fix |
 |---|---|
 | Chapter 2: tapping a lantern lit the wrong one when two lanterns were close (lanterns 3 and 4 sit 87 px apart in virtual space, the hit test accepted the first match within 110 px) — the QA playthrough was blocked at 3/5 lanterns and never reached the letter. | `LanternPuzzle` now computes the **nearest** lantern within a 150 px reach and only acts on that one. |
+| Chapter 4: the scripted heart was invisible to the game — the QA script converted the normalised star Y coordinates as `y*900` instead of `(1-y)*900`, and the puzzle's hit test returned the first star within reach instead of the nearest (two heart stars are 135 px apart). | Script coordinates corrected; `ConstellationPuzzle` now picks the **nearest** star; the QA window over the letter was extended because each paragraph now waits for Esteban's recorded voice to finish. |
+| Chapter 4 hint text said "la plus basse" while the first star to touch is actually the topmost one. | Hint reworded to "l'étoile la plus haute… descends par la gauche". |
+| QA evidence was ~30 MB of PNGs per run, and the evidence push could fail when another workflow pushed in between. | Screenshots are committed as 50% JPEGs and the push step retries its rebase. |
+| QA pass/fail depended on humans inspecting screenshots. | The game logs `Milestone` tags (chapter-enter/complete ×6, puzzle-solved, letter-open, letter-end) and the CI asserts every one of them in logcat. |
 | Order puzzle slots and chapter hotspots did not line up with the illustrations. | Coordinates realigned on the real artwork, verified on screenshots. |
 | Local Gradle/Android builds impossible in the sandbox (no access to `dl.google.com`, `maven.google.com`, Maven Central). | Every build and every emulator test runs on GitHub Actions; the APK and the reports are committed back to the branch. |
 | Heavy content could not be versioned (GitHub refuses files > 100 MB). | The content is generated on the runner from small Python generators and the resulting APK is published as a GitHub **Release** asset. |
