@@ -25,7 +25,7 @@ SRC = "art/src"
 OUT = "android/assets/cutscene"
 W, H = 1920, 1080
 FPS = 20
-QUALITY = 93
+QUALITY = 96
 FAST = "--fast" in sys.argv
 
 rng = np.random.default_rng(7)
