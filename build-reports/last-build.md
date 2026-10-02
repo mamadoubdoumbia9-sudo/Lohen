@@ -1,6 +1,6 @@
 # Build report
-date: Thu Oct  1 23:13:45 UTC 2026
-commit: d76d571acca345743c1bda651bb07bb151a34bd0
+date: Fri Oct  2 11:41:11 UTC 2026
+commit: 8d1dce4f8b5c45b216db2c04c949091a29b847fa
 tests_outcome: success
 assemble_outcome: success
 
@@ -50,9 +50,9 @@ ContentTest > everyReferencedAssetExists PASSED
 ContentTest > contentValidates PASSED
 
 ContentTest > letterIsARealLetter PASSED
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790896344646.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/tests-1790941197053.json
 
-BUILD SUCCESSFUL in 38s
+BUILD SUCCESSFUL in 35s
 3 actionable tasks: 3 executed
 
 ## build.log (tail)
@@ -80,19 +80,19 @@ Build was configured to prefer settings repositories over project repositories b
 > Task :android:mapDebugSourceSetPaths
 > Task :android:generateDebugResources
 > Task :android:packageDebugResources
+> Task :android:mergeDebugResources
 > Task :android:createDebugCompatibleScreenManifests
 > Task :android:extractDeepLinksDebug
 > Task :android:parseDebugLocalResources
-> Task :android:mergeDebugResources
 > Task :android:processDebugMainManifest
 > Task :android:processDebugManifest
 > Task :android:mergeDebugShaders
+> Task :android:processDebugManifestForPackage
 > Task :android:compileDebugShaders NO-SOURCE
 > Task :android:generateDebugAssets UP-TO-DATE
 > Task :android:mergeDebugAssets
-> Task :android:processDebugManifestForPackage
-> Task :android:compressDebugAssets
 > Task :android:processDebugResources
+> Task :android:compressDebugAssets
 > Task :android:desugarDebugFileDependencies
 
 > Task :android:compileDebugJavaWithJavac
@@ -120,15 +120,15 @@ Unable to strip the following libraries, packaging them as they are: libgdx-free
 > Task :android:packageDebug
 > Task :android:createDebugApkListingFileRedirect
 > Task :android:assembleDebug
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790896380004.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/assemble-1790941229971.json
 [Incubating] Problems report is available at: file:///home/runner/work/Lohen/Lohen/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 48s
+BUILD SUCCESSFUL in 44s
 37 actionable tasks: 36 executed, 1 up-to-date
 
 ## apk
-total 11840
--rw-r--r-- 1 runner runner 12118151 Oct  1 23:13 android-debug.apk
--rw-r--r-- 1 runner runner      405 Oct  1 23:13 output-metadata.json
-8374d5bd480518e58222e5f7cd782b8363b2ffe500ec86d28e91249a77bb2bce  dist/PourLohen-debug.apk
-12M	dist/PourLohen-debug.apk
+total 14540
+-rw-r--r-- 1 runner runner 14882648 Oct  2 11:41 android-debug.apk
+-rw-r--r-- 1 runner runner      405 Oct  2 11:41 output-metadata.json
+76a2a31401b013cb2ca31351b2c2ecdd3ff469de228b0edbda0d0174fda7dd88  dist/PourLohen-debug.apk
+15M	dist/PourLohen-debug.apk
