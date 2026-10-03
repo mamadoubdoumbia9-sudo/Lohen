@@ -1,0 +1,20 @@
+chapter-enter 1
+puzzle-solved OrderPuzzle
+chapter-complete 1
+chapter-enter 2
+puzzle-solved LanternPuzzle
+chapter-complete 2
+chapter-enter 3
+puzzle-solved RiddlePuzzle
+chapter-complete 3
+chapter-enter 4
+puzzle-solved ConstellationPuzzle
+chapter-complete 4
+chapter-enter 5
+puzzle-solved MelodyPuzzle
+chapter-complete 5
+chapter-enter 6
+puzzle-solved CodePuzzle
+chapter-complete 6
+letter-open
+letter-end

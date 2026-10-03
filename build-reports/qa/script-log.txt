@@ -1,457 +1,2170 @@
 + adb wait-for-device
-+ timeout 300 command adb wait-for-device
-timeout: failed to run command ‘command’: No such file or directory
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb wait-for-device
 + boot=0
 + '[' 0 -lt 420 ']'
-++ tr -d '\r'
-++ adb shell getprop sys.boot_completed
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 5 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 10 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 15 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 20 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 25 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 30 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 35 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 40 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 45 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 50 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 55 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 60 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 65 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 70 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 75 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 80 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 85 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 90 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 95 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 100 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 105 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 110 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 115 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 120 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 125 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 130 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 135 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 140 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 145 -lt 420 ']'
-++ tr -d '\r'
-++ adb shell getprop sys.boot_completed
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 150 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 155 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 160 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 165 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 170 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 175 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 180 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 185 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 190 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 195 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 200 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 205 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 210 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 215 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 220 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 225 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 230 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 235 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 240 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 245 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 250 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 255 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 260 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 265 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 270 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 275 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 280 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 285 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 290 -lt 420 ']'
-++ tr -d '\r'
-++ adb shell getprop sys.boot_completed
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 295 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 300 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 305 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 310 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 315 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 320 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 325 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 330 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 335 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 340 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 345 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 350 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 355 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 360 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 365 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 370 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 375 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 380 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 385 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 390 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 395 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 400 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 405 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 410 -lt 420 ']'
-++ adb shell getprop sys.boot_completed
-++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 415 -lt 420 ']'
 ++ adb shell getprop sys.boot_completed
 ++ tr -d '\r'
-+ '[' '' = 1 ']'
-+ sleep 5
-+ '[' 420 -lt 420 ']'
-+ echo 'boot_completed after 420s'
-boot_completed after 420s
++ '[' 1 = 1 ']'
++ break
++ echo 'boot_completed after 0s'
+boot_completed after 0s
 + adb shell input keyevent 82
-+ timeout 300 command adb shell input keyevent 82
-timeout: failed to run command ‘command’: No such file or directory
-+ true
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input keyevent 82
 ++ adb shell wm size
-++ timeout 300 command adb shell wm size
+++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell wm size
 ++ tr -d '\r'
 ++ awk '{print $3}'
-timeout: failed to run command ‘command’: No such file or directory
-+ SIZE=
-+ DW=
-+ DH=
-+ LW=
-+ LH=
-++ awk -v w= -v h= 'BEGIN{sw=w/1600; sh=h/900; print (sw<sh?sw:sh)}'
-+ SCALE=0
-++ awk -v w= -v s=0 'BEGIN{print (w-1600*s)/2}'
++ SIZE=1440x2560
++ DW=1440
++ DH=2560
++ LW=2560
++ LH=1440
+++ awk -v w=2560 -v h=1440 'BEGIN{sw=w/1600; sh=h/900; print (sw<sh?sw:sh)}'
++ SCALE=1.6
+++ awk -v w=2560 -v s=1.6 'BEGIN{print (w-1600*s)/2}'
 + OX=0
-++ awk -v h= -v s=0 'BEGIN{print (h-900*s)/2}'
+++ awk -v h=1440 -v s=1.6 'BEGIN{print (h-900*s)/2}'
 + OY=0
-+ echo 'device x -> landscape x scale=0 offset=0,0'
-device x -> landscape x scale=0 offset=0,0
++ echo 'device 1440x2560 -> landscape 2560x1440 scale=1.6 offset=0,0'
+device 1440x2560 -> landscape 2560x1440 scale=1.6 offset=0,0
 + echo '== install =='
 == install ==
 + adb install -r -g android/build/outputs/apk/debug/android-debug.apk
-+ timeout 300 command adb install -r -g android/build/outputs/apk/debug/android-debug.apk
-timeout: failed to run command ‘command’: No such file or directory
-+ echo INSTALL-FAILED
-INSTALL-FAILED
-+ exit 1
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb install -r -g android/build/outputs/apk/debug/android-debug.apk
+Performing Streamed Install
+Success
++ echo 'install ok'
+install ok
++ adb logcat -c
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb logcat -c
++ adb shell am start -n com.esteban.lohen/.android.AndroidLauncher
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell am start -n com.esteban.lohen/.android.AndroidLauncher
+Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
++ sleep 20
++ shot 01-title
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 01-title'
+  shot 01-title
++ adb shell pidof com.esteban.lohen
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell pidof com.esteban.lohen
++ echo '== chapitre 1 : Le Seuil =='
+== chapitre 1 : Le Seuil ==
++ tapv 350 482
+++ dx 350
+++ awk -v x=350 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 482
+++ awk -v y=482 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 560 668
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 560 668
++ sleep 4
++ shot 02-ch1-titlecard
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 02-ch1-titlecard'
+  shot 02-ch1-titlecard
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ line 5
+++ seq 1 5
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ shot 03-ch1-explore
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 03-ch1-explore'
+  shot 03-ch1-explore
++ taphs 0.42 0.62
+++ awk -v v=0.42 'BEGIN{print v*1600}'
+++ awk -v v=0.62 'BEGIN{print (1-v)*900}'
++ tapv 672 342
+++ dx 672
+++ awk -v x=672 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 342
+++ awk -v y=342 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1075 892
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1075 892
++ sleep 1
++ shot 04-ch1-hotspot-fenetre
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 04-ch1-hotspot-fenetre'
+  shot 04-ch1-hotspot-fenetre
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.15 0.13
+++ awk -v v=0.15 'BEGIN{print v*1600}'
+++ awk -v v=0.13 'BEGIN{print (1-v)*900}'
++ tapv 240 783
+++ dx 240
+++ awk -v x=240 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 783
+++ awk -v y=783 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 384 187
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 384 187
++ sleep 1
++ shot 05-ch1-hotspot-bureau
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 05-ch1-hotspot-bureau'
+  shot 05-ch1-hotspot-bureau
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.86 0.86
+++ awk -v v=0.86 'BEGIN{print v*1600}'
+++ awk -v v=0.86 'BEGIN{print (1-v)*900}'
++ tapv 1376 126
+++ dx 1376
+++ awk -v x=1376 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 126
+++ awk -v y=126 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 2201 1238
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 2201 1238
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ shot 06-ch1-ready
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 06-ch1-ready'
+  shot 06-ch1-ready
++ tapv 1395 790
+++ dx 1395
+++ awk -v x=1395 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 790
+++ awk -v y=790 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 2232 176
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 2232 176
++ sleep 2
++ shot 07-journal
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 07-journal'
+  shot 07-journal
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ tapv 1180 790
+++ dx 1180
+++ awk -v x=1180 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 790
+++ awk -v y=790 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1888 176
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1888 176
++ sleep 2
++ shot 08-hint
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 08-hint'
+  shot 08-hint
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ tapv 800 202
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 202
+++ awk -v y=202 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1116
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1116
++ sleep 2
++ shot 09-ch1-puzzle-order
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 09-ch1-puzzle-order'
+  shot 09-ch1-puzzle-order
++ tapv 800 679
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 679
+++ awk -v y=679 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 353
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 353
++ sleep 1
++ tapv 800 271
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 271
+++ awk -v y=271 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1006
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1006
++ sleep 1
++ tapv 800 543
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 543
+++ awk -v y=543 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 571
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 571
++ sleep 1
++ tapv 800 407
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 407
+++ awk -v y=407 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 788
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 788
++ sleep 1
++ tapv 800 407
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 407
+++ awk -v y=407 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 788
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 788
++ sleep 1
++ tapv 800 271
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 271
+++ awk -v y=271 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1006
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1006
++ sleep 1
++ shot 10-ch1-puzzle-arranged
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 10-ch1-puzzle-arranged'
+  shot 10-ch1-puzzle-arranged
++ tapv 800 124
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 124
+++ awk -v y=124 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1241
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1241
++ sleep 3
++ shot 11-ch1-solved
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 11-ch1-solved'
+  shot 11-ch1-solved
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ sleep 2
++ shot 12-ch1-reward
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 12-ch1-reward'
+  shot 12-ch1-reward
++ tapv 800 172
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 172
+++ awk -v y=172 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1164
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1164
++ sleep 4
++ echo '== chapitre 2 : Le Jardin des Lanternes =='
+== chapitre 2 : Le Jardin des Lanternes ==
++ shot 13-ch2-titlecard
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 13-ch2-titlecard'
+  shot 13-ch2-titlecard
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.10 0.22
+++ awk -v v=0.10 'BEGIN{print v*1600}'
+++ awk -v v=0.22 'BEGIN{print (1-v)*900}'
++ tapv 160 702
+++ dx 160
+++ awk -v x=160 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 702
+++ awk -v y=702 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 256 316
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 256 316
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.68 0.33
+++ awk -v v=0.68 'BEGIN{print v*1600}'
+++ awk -v v=0.33 'BEGIN{print (1-v)*900}'
++ tapv 1088 603
+++ dx 1088
+++ awk -v x=1088 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 603
+++ awk -v y=603 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1740 475
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1740 475
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ shot 14-ch2-explore
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 14-ch2-explore'
+  shot 14-ch2-explore
++ tapv 800 202
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 202
+++ awk -v y=202 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1116
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1116
++ sleep 2
++ shot 15-ch2-puzzle-lanterns
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 15-ch2-puzzle-lanterns'
+  shot 15-ch2-puzzle-lanterns
++ taphs 0.498 0.545
+++ awk -v v=0.498 'BEGIN{print v*1600}'
+++ awk -v v=0.545 'BEGIN{print (1-v)*900}'
++ tapv 796.8 409.5
+++ dx 796.8
+++ awk -v x=796.8 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 409.5
+++ awk -v y=409.5 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1274 784
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1274 784
++ sleep 1.2
++ taphs 0.625 0.473
+++ awk -v v=0.625 'BEGIN{print v*1600}'
+++ awk -v v=0.473 'BEGIN{print (1-v)*900}'
++ tapv 1000 474.3
+++ dx 1000
+++ awk -v x=1000 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 474.3
+++ awk -v y=474.3 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1600 681
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1600 681
++ sleep 1.2
++ taphs 0.374 0.618
+++ awk -v v=0.374 'BEGIN{print v*1600}'
+++ awk -v v=0.618 'BEGIN{print (1-v)*900}'
++ tapv 598.4 343.8
+++ dx 598.4
+++ awk -v x=598.4 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 343.8
+++ awk -v y=343.8 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 957 889
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 957 889
++ sleep 1.2
++ taphs 0.573 0.503
+++ awk -v v=0.573 'BEGIN{print v*1600}'
+++ awk -v v=0.503 'BEGIN{print (1-v)*900}'
++ tapv 916.8 447.3
+++ dx 916.8
+++ awk -v x=916.8 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 447.3
+++ awk -v y=447.3 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1466 724
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1466 724
++ sleep 1.2
++ shot 16-ch2-lanterns-mid
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 16-ch2-lanterns-mid'
+  shot 16-ch2-lanterns-mid
++ taphs 0.172 0.752
+++ awk -v v=0.172 'BEGIN{print v*1600}'
+++ awk -v v=0.752 'BEGIN{print (1-v)*900}'
++ tapv 275.2 223.2
+++ dx 275.2
+++ awk -v x=275.2 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 223.2
+++ awk -v y=223.2 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 440 1082
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 440 1082
++ sleep 3
++ shot 17-ch2-solved
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 17-ch2-solved'
+  shot 17-ch2-solved
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ sleep 2
++ shot 18-ch2-reward
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 18-ch2-reward'
+  shot 18-ch2-reward
++ tapv 800 172
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 172
+++ awk -v y=172 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1164
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1164
++ sleep 4
++ echo '== chapitre 3 : La Bibliotheque =='
+== chapitre 3 : La Bibliotheque ==
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.84 0.74
+++ awk -v v=0.84 'BEGIN{print v*1600}'
+++ awk -v v=0.74 'BEGIN{print (1-v)*900}'
++ tapv 1344 234
+++ dx 1344
+++ awk -v x=1344 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 234
+++ awk -v y=234 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 2150 1065
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 2150 1065
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.60 0.13
+++ awk -v v=0.60 'BEGIN{print v*1600}'
+++ awk -v v=0.13 'BEGIN{print (1-v)*900}'
++ tapv 960 783
+++ dx 960
+++ awk -v x=960 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 783
+++ awk -v y=783 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1536 187
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1536 187
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ tapv 800 202
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 202
+++ awk -v y=202 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1116
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1116
++ sleep 2
++ shot 19-ch3-puzzle-riddle
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 19-ch3-puzzle-riddle'
+  shot 19-ch3-puzzle-riddle
++ for X in 485 611 737 863 989 1115
++ tapv 485 275
+++ dx 485
+++ awk -v x=485 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 275
+++ awk -v y=275 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 776 1000
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 776 1000
++ sleep 0.9
++ for X in 485 611 737 863 989 1115
++ tapv 611 275
+++ dx 611
+++ awk -v x=611 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 275
+++ awk -v y=275 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 977 1000
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 977 1000
++ sleep 0.9
++ for X in 485 611 737 863 989 1115
++ tapv 737 275
+++ dx 737
+++ awk -v x=737 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 275
+++ awk -v y=275 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1179 1000
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1179 1000
++ sleep 0.9
++ for X in 485 611 737 863 989 1115
++ tapv 863 275
+++ dx 863
+++ awk -v x=863 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 275
+++ awk -v y=275 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1380 1000
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1380 1000
++ sleep 0.9
++ for X in 485 611 737 863 989 1115
++ tapv 989 275
+++ dx 989
+++ awk -v x=989 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 275
+++ awk -v y=275 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1582 1000
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1582 1000
++ sleep 0.9
++ for X in 485 611 737 863 989 1115
++ tapv 1115 275
+++ dx 1115
+++ awk -v x=1115 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 275
+++ awk -v y=275 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1784 1000
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1784 1000
++ sleep 0.9
++ sleep 3
++ shot 20-ch3-solved
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 20-ch3-solved'
+  shot 20-ch3-solved
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ sleep 2
++ shot 21-ch3-reward
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 21-ch3-reward'
+  shot 21-ch3-reward
++ tapv 800 172
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 172
+++ awk -v y=172 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1164
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1164
++ sleep 4
++ echo '== chapitre 4 : Le Ciel =='
+== chapitre 4 : Le Ciel ==
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.78 0.45
+++ awk -v v=0.78 'BEGIN{print v*1600}'
+++ awk -v v=0.45 'BEGIN{print (1-v)*900}'
++ tapv 1248 495
+++ dx 1248
+++ awk -v x=1248 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 495
+++ awk -v y=495 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1996 648
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1996 648
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ tapv 800 202
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 202
+++ awk -v y=202 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1116
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1116
++ sleep 2
++ shot 22-ch4-puzzle-constellation
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 22-ch4-puzzle-constellation'
+  shot 22-ch4-puzzle-constellation
+++ dx 480
+++ awk -v x=480 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
++ D=768
+++ dy 525.2
+++ awk -v y=525.2 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ E=599
++ adb shell input motionevent DOWN 768 599
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent DOWN 768 599
++ sleep 0.4
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 326.4 398.5
+++ dx 326.4
+++ awk -v x=326.4 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 398.5
+++ awk -v y=398.5 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 522 802
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 522 802
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 249.6 256.0
+++ dx 249.6
+++ awk -v x=249.6 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 256.0
+++ awk -v y=256.0 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 399 1030
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 399 1030
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 326.4 145.1
+++ dx 326.4
+++ awk -v x=326.4 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 145.1
+++ awk -v y=145.1 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 522 1207
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 522 1207
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 480 200.5
+++ dx 480
+++ awk -v x=480 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 200.5
+++ awk -v y=200.5 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 768 1119
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 768 1119
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 633.6 145.1
+++ dx 633.6
+++ awk -v x=633.6 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 145.1
+++ awk -v y=145.1 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 1013 1207
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 1013 1207
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 710.4 256.0
+++ dx 710.4
+++ awk -v x=710.4 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 256.0
+++ awk -v y=256.0 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 1136 1030
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 1136 1030
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 633.6 398.5
+++ dx 633.6
+++ awk -v x=633.6 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 398.5
+++ awk -v y=398.5 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 1013 802
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 1013 802
++ sleep 0.45
++ for P in "326.4 398.5" "249.6 256.0" "326.4 145.1" "480 200.5" "633.6 145.1" "710.4 256.0" "633.6 398.5" "480 525.2"
++ set -- 480 525.2
+++ dx 480
+++ awk -v x=480 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 525.2
+++ awk -v y=525.2 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent MOVE 768 599
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent MOVE 768 599
++ sleep 0.45
+++ dx 480
+++ awk -v x=480 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 525.2
+++ awk -v y=525.2 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input motionevent UP 768 599
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input motionevent UP 768 599
++ sleep 2
++ shot 23-ch4-solved
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 23-ch4-solved'
+  shot 23-ch4-solved
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ sleep 2
++ shot 24-ch4-reward
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 24-ch4-reward'
+  shot 24-ch4-reward
++ tapv 800 172
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 172
+++ awk -v y=172 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1164
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1164
++ sleep 4
++ echo '== chapitre 5 : La Boite a Musique =='
+== chapitre 5 : La Boite a Musique ==
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.30 0.10
+++ awk -v v=0.30 'BEGIN{print v*1600}'
+++ awk -v v=0.10 'BEGIN{print (1-v)*900}'
++ tapv 480 810
+++ dx 480
+++ awk -v x=480 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 810
+++ awk -v y=810 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 768 144
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 768 144
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ tapv 800 202
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 202
+++ awk -v y=202 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1116
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1116
++ sleep 2
++ shot 25-ch5-puzzle-melody
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 25-ch5-puzzle-melody'
+  shot 25-ch5-puzzle-melody
++ tapv 800 218
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 218
+++ awk -v y=218 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1091
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1091
++ sleep 6
++ shot 26-ch5-listening
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 26-ch5-listening'
+  shot 26-ch5-listening
++ tapv 800 452
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 452
+++ awk -v y=452 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 716
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 716
++ sleep 0.9
++ tapv 280 400
+++ dx 280
+++ awk -v x=280 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 400
+++ awk -v y=400 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 448 800
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 448 800
++ sleep 0.9
++ tapv 1060 478
+++ dx 1060
+++ awk -v x=1060 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 478
+++ awk -v y=478 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1696 675
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1696 675
++ sleep 0.9
++ tapv 540 426
+++ dx 540
+++ awk -v x=540 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 426
+++ awk -v y=426 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 864 758
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 864 758
++ sleep 0.9
++ tapv 1320 504
+++ dx 1320
+++ awk -v x=1320 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 504
+++ awk -v y=504 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 2112 633
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 2112 633
++ sleep 0.9
++ tapv 800 452
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 452
+++ awk -v y=452 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 716
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 716
++ sleep 3
++ shot 27-ch5-solved
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 27-ch5-solved'
+  shot 27-ch5-solved
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ sleep 2
++ shot 28-ch5-reward
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 28-ch5-reward'
+  shot 28-ch5-reward
++ tapv 800 172
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 172
+++ awk -v y=172 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1164
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1164
++ sleep 4
++ echo '== chapitre 6 : Le Phare =='
+== chapitre 6 : Le Phare ==
++ tapv 800 450
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 450
+++ awk -v y=450 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 720
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 720
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.52 0.65
+++ awk -v v=0.52 'BEGIN{print v*1600}'
+++ awk -v v=0.65 'BEGIN{print (1-v)*900}'
++ tapv 832 315
+++ dx 832
+++ awk -v x=832 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 315
+++ awk -v y=315 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1331 936
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1331 936
++ sleep 1
++ line 3
+++ seq 1 3
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ taphs 0.86 0.25
+++ awk -v v=0.86 'BEGIN{print v*1600}'
+++ awk -v v=0.25 'BEGIN{print (1-v)*900}'
++ tapv 1376 675
+++ dx 1376
+++ awk -v x=1376 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 675
+++ awk -v y=675 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 2201 360
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 2201 360
++ sleep 1
++ line 2
+++ seq 1 2
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ shot 29-ch6-explore
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 29-ch6-explore'
+  shot 29-ch6-explore
++ tapv 800 202
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 202
+++ awk -v y=202 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1116
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1116
++ sleep 2
++ shot 30-ch6-puzzle-code
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 30-ch6-puzzle-code'
+  shot 30-ch6-puzzle-code
++ swipev 697 290 464 575 900
+++ dx 697
+++ awk -v x=697 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 290
+++ awk -v y=290 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
+++ dx 464
+++ awk -v x=464 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 575
+++ awk -v y=575 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input swipe 1115 976 742 520 900
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input swipe 1115 976 742 520 900
++ sleep 1.2
++ swipev 491 290 688 575 900
+++ dx 491
+++ awk -v x=491 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 290
+++ awk -v y=290 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
+++ dx 688
+++ awk -v x=688 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 575
+++ awk -v y=575 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input swipe 785 976 1100 520 900
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input swipe 785 976 1100 520 900
++ sleep 1.2
++ swipev 1109 290 912 575 900
+++ dx 1109
+++ awk -v x=1109 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 290
+++ awk -v y=290 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
+++ dx 912
+++ awk -v x=912 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 575
+++ awk -v y=575 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input swipe 1774 976 1459 520 900
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input swipe 1774 976 1459 520 900
++ sleep 1.2
++ shot 31-ch6-code-mid
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 31-ch6-code-mid'
+  shot 31-ch6-code-mid
++ swipev 903 290 1136 575 900
+++ dx 903
+++ awk -v x=903 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 290
+++ awk -v y=290 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
+++ dx 1136
+++ awk -v x=1136 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 575
+++ awk -v y=575 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input swipe 1444 976 1817 520 900
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input swipe 1444 976 1817 520 900
++ sleep 3
++ shot 32-ch6-chest-open
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 32-ch6-chest-open'
+  shot 32-ch6-chest-open
++ line 1
+++ seq 1 1
++ for _ in $(seq 1 "${1:-1}")
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.8
++ tapv 800 110
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 110
+++ awk -v y=110 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1264
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1264
++ sleep 0.9
++ sleep 2
++ shot 33-ch6-reward
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 33-ch6-reward'
+  shot 33-ch6-reward
++ tapv 800 172
+++ dx 800
+++ awk -v x=800 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+x*s}'
+++ dy 172
+++ awk -v y=172 -v s=1.6 -v o=0 'BEGIN{printf "%d", o+(900-y)*s}'
++ adb shell input tap 1280 1164
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell input tap 1280 1164
++ sleep 5
++ echo '== la lettre =='
+== la lettre ==
++ T0=945
++ shot 34-letter-opening
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 34-letter-opening'
+  shot 34-letter-opening
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 16 -gt 240 ']'
++ sleep 18
++ shot 35-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 35-letter'
+  shot 35-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 49 -gt 240 ']'
++ sleep 18
++ shot 36-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 36-letter'
+  shot 36-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 83 -gt 240 ']'
++ sleep 18
++ shot 37-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 37-letter'
+  shot 37-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 119 -gt 240 ']'
++ sleep 18
++ shot 38-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 38-letter'
+  shot 38-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 154 -gt 240 ']'
++ sleep 18
++ shot 39-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 39-letter'
+  shot 39-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 188 -gt 240 ']'
++ sleep 18
++ shot 40-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 40-letter'
+  shot 40-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 222 -gt 240 ']'
++ sleep 18
++ shot 41-letter
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 41-letter'
+  shot 41-letter
++ for i in 35 36 37 38 39 40 41 42 43
++ '[' 256 -gt 240 ']'
++ echo '  (budget guard: skipping remaining letter shots)'
+  (budget guard: skipping remaining letter shots)
++ break
++ sleep 25
++ shot 44-letter-closing
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 44-letter-closing'
+  shot 44-letter-closing
++ sleep 25
++ shot 45-letter-end
++ sleep 1
++ adb exec-out screencap -p
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb exec-out screencap -p
++ echo '  shot 45-letter-end'
+  shot 45-letter-end
++ echo '== logs =='
+== logs ==
++ adb logcat -d
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb logcat -d
++ sed 's/.*Milestone[: ]*//'
++ awk '!seen[$0]++'
++ grep -F Milestone /tmp/qa/logcat.txt
++ echo '--- milestones reached:'
+--- milestones reached:
++ cat /tmp/qa/milestones.txt
+chapter-enter 1
+puzzle-solved OrderPuzzle
+chapter-complete 1
+chapter-enter 2
+puzzle-solved LanternPuzzle
+chapter-complete 2
+chapter-enter 3
+puzzle-solved RiddlePuzzle
+chapter-complete 3
+chapter-enter 4
+puzzle-solved ConstellationPuzzle
+chapter-complete 4
+chapter-enter 5
+puzzle-solved MelodyPuzzle
+chapter-complete 5
+chapter-enter 6
+puzzle-solved CodePuzzle
+chapter-complete 6
+letter-open
+letter-end
++ MISSING=
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-enter 1' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-complete 1' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-enter 2' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-complete 2' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-enter 3' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-complete 3' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-enter 4' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-complete 4' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-enter 5' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-complete 5' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-enter 6' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF 'chapter-complete 6' /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF letter-open /tmp/qa/milestones.txt
++ for M in "chapter-enter 1" "chapter-complete 1" "chapter-enter 2" "chapter-complete 2" "chapter-enter 3" "chapter-complete 3" "chapter-enter 4" "chapter-complete 4" "chapter-enter 5" "chapter-complete 5" "chapter-enter 6" "chapter-complete 6" "letter-open" "letter-end"
++ grep -qF letter-end /tmp/qa/milestones.txt
++ '[' -n '' ']'
++ echo 'all milestones reached'
++ head -60
++ grep -E ' (I|E|W) (Lohen|Chapter|Content|AndroidRuntime)' /tmp/qa/logcat.txt
++ grep -c 'FATAL EXCEPTION' /tmp/qa/logcat.txt
++ echo 0
++ adb shell pidof com.esteban.lohen
++ timeout 300 /usr/local/lib/android/sdk/platform-tools/adb shell pidof com.esteban.lohen
++ echo alive
++ cat /tmp/qa/result.txt /tmp/qa/fatal-count.txt
+alive
+0
++ exit 0

@@ -1,0 +1,60 @@
+10-03 02:35:15.102  2005  2005 I AndroidRuntime: Using default boot image
+10-03 02:35:15.102  2005  2005 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:35:19.531  2327  2352 I Lohen   : boot: save v1 chapter=1
+10-03 02:35:22.468  2327  2352 I Content : validated: 6 chapters
+10-03 02:35:55.184  2470  2470 I AndroidRuntime: Using default boot image
+10-03 02:35:55.184  2470  2470 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:35:57.958  2327  2352 I Chapter : entered ch1
+10-03 02:36:12.808  2511  2511 I AndroidRuntime: Using default boot image
+10-03 02:36:12.808  2511  2511 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:14.536  2525  2525 I AndroidRuntime: Using default boot image
+10-03 02:36:14.536  2525  2525 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:16.380  2538  2538 I AndroidRuntime: Using default boot image
+10-03 02:36:16.380  2538  2538 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:18.141  2551  2551 I AndroidRuntime: Using default boot image
+10-03 02:36:18.141  2551  2551 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:20.021  2590  2590 I AndroidRuntime: Using default boot image
+10-03 02:36:20.021  2590  2590 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:20.233  2590  2603 I AndroidRuntime: NOTE: attach of thread 'Binder:2590_1' failed
+10-03 02:36:22.137  2604  2604 I AndroidRuntime: Using default boot image
+10-03 02:36:22.137  2604  2604 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:23.879  2617  2617 I AndroidRuntime: Using default boot image
+10-03 02:36:23.879  2617  2617 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:26.330  2630  2630 I AndroidRuntime: Using default boot image
+10-03 02:36:26.330  2630  2630 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:27.973  2643  2643 I AndroidRuntime: Using default boot image
+10-03 02:36:27.973  2643  2643 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:28.273  2643  2654 I AndroidRuntime: NOTE: attach of thread 'Binder:2643_1' failed
+10-03 02:36:29.972  2655  2655 I AndroidRuntime: Using default boot image
+10-03 02:36:29.972  2655  2655 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:31.723  2668  2668 I AndroidRuntime: Using default boot image
+10-03 02:36:31.729  2668  2668 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:36:50.738  2686  2686 I AndroidRuntime: Using default boot image
+10-03 02:36:50.738  2686  2686 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:08.694  2706  2706 I AndroidRuntime: Using default boot image
+10-03 02:37:08.694  2706  2706 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:10.400  2722  2722 I AndroidRuntime: Using default boot image
+10-03 02:37:10.400  2722  2722 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:12.361  2735  2735 I AndroidRuntime: Using default boot image
+10-03 02:37:12.362  2735  2735 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:14.348  2748  2748 I AndroidRuntime: Using default boot image
+10-03 02:37:14.348  2748  2748 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:16.556  2761  2761 I AndroidRuntime: Using default boot image
+10-03 02:37:16.556  2761  2761 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:33.327  2779  2779 I AndroidRuntime: Using default boot image
+10-03 02:37:33.327  2779  2779 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:35.208  2794  2794 I AndroidRuntime: Using default boot image
+10-03 02:37:35.208  2794  2794 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:37.311  2808  2808 I AndroidRuntime: Using default boot image
+10-03 02:37:37.311  2808  2808 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:39.133  2821  2821 I AndroidRuntime: Using default boot image
+10-03 02:37:39.133  2821  2821 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:40.863  2834  2834 I AndroidRuntime: Using default boot image
+10-03 02:37:40.863  2834  2834 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:42.970  2847  2847 I AndroidRuntime: Using default boot image
+10-03 02:37:42.970  2847  2847 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:44.808  2860  2860 I AndroidRuntime: Using default boot image
+10-03 02:37:44.808  2860  2860 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:47.218  2874  2874 I AndroidRuntime: Using default boot image
+10-03 02:37:47.218  2874  2874 I AndroidRuntime: Leaving lock profiling enabled
+10-03 02:37:47.442  2874  2885 I AndroidRuntime: NOTE: attach of thread 'Binder:2874_1' failed
