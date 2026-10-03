@@ -2007,7 +2007,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + sleep 5
 + echo '== la lettre =='
 == la lettre ==
-+ T0=945
++ T0=943
 + shot 34-letter-opening
 + sleep 1
 + adb exec-out screencap -p
@@ -2015,7 +2015,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + echo '  shot 34-letter-opening'
   shot 34-letter-opening
 + for i in 35 36 37 38 39 40 41 42 43
-+ '[' 16 -gt 240 ']'
++ '[' 15 -gt 240 ']'
 + sleep 18
 + shot 35-letter
 + sleep 1
@@ -2024,7 +2024,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + echo '  shot 35-letter'
   shot 35-letter
 + for i in 35 36 37 38 39 40 41 42 43
-+ '[' 49 -gt 240 ']'
++ '[' 48 -gt 240 ']'
 + sleep 18
 + shot 36-letter
 + sleep 1
@@ -2033,7 +2033,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + echo '  shot 36-letter'
   shot 36-letter
 + for i in 35 36 37 38 39 40 41 42 43
-+ '[' 83 -gt 240 ']'
++ '[' 82 -gt 240 ']'
 + sleep 18
 + shot 37-letter
 + sleep 1
@@ -2042,7 +2042,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + echo '  shot 37-letter'
   shot 37-letter
 + for i in 35 36 37 38 39 40 41 42 43
-+ '[' 119 -gt 240 ']'
++ '[' 116 -gt 240 ']'
 + sleep 18
 + shot 38-letter
 + sleep 1
@@ -2051,7 +2051,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + echo '  shot 38-letter'
   shot 38-letter
 + for i in 35 36 37 38 39 40 41 42 43
-+ '[' 154 -gt 240 ']'
++ '[' 153 -gt 240 ']'
 + sleep 18
 + shot 39-letter
 + sleep 1
@@ -2078,7 +2078,7 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + echo '  shot 41-letter'
   shot 41-letter
 + for i in 35 36 37 38 39 40 41 42 43
-+ '[' 256 -gt 240 ']'
++ '[' 254 -gt 240 ']'
 + echo '  (budget guard: skipping remaining letter shots)'
   (budget guard: skipping remaining letter shots)
 + break
@@ -2101,8 +2101,8 @@ Starting: Intent { cmp=com.esteban.lohen/.android.AndroidLauncher }
 + adb logcat -d
 + timeout 300 /usr/local/lib/android/sdk/platform-tools/adb logcat -d
 + sed 's/.*Milestone[: ]*//'
-+ awk '!seen[$0]++'
 + grep -F Milestone /tmp/qa/logcat.txt
++ awk '!seen[$0]++'
 + echo '--- milestones reached:'
 --- milestones reached:
 + cat /tmp/qa/milestones.txt
@@ -2157,8 +2157,8 @@ letter-end
 + grep -qF letter-end /tmp/qa/milestones.txt
 + '[' -n '' ']'
 + echo 'all milestones reached'
-+ head -60
 + grep -E ' (I|E|W) (Lohen|Chapter|Content|AndroidRuntime)' /tmp/qa/logcat.txt
++ head -60
 + grep -c 'FATAL EXCEPTION' /tmp/qa/logcat.txt
 + echo 0
 + adb shell pidof com.esteban.lohen
