@@ -7,7 +7,8 @@ set -u
 
 # an adb call that hangs (flaky emulator IPC) must never freeze the run;
 # 60s is generous for taps/logcat, 90s for APK install and screencaps
-adb() { timeout 300 command adb "$@"; }
+ADBBIN=$(command -v adb)
+adb() { timeout 300 "$ADBBIN" "$@"; }
 
 PKG=com.esteban.lohen
 ACT=$PKG/.android.AndroidLauncher
