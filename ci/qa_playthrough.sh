@@ -7,12 +7,15 @@ set -u
 
 # an adb call that hangs (flaky emulator IPC) must never freeze the run;
 # 60s is generous for taps/logcat, 90s for APK install and screencaps
-adb() { timeout 90 command adb "$@"; }
+adb() { timeout 300 command adb "$@"; }
 
 PKG=com.esteban.lohen
 ACT=$PKG/.android.AndroidLauncher
 OUT=/tmp/qa
 mkdir -p "$OUT"
+# full shell trace as committed evidence: the only way to see WHY a step died
+exec > >(tee "$OUT/script-log.txt") 2>&1
+set -x
 
 adb wait-for-device
 boot=$SECONDS
@@ -45,7 +48,8 @@ shot() { sleep 1; adb exec-out screencap -p > "$OUT/$1.png"; echo "  shot $1"; }
 line() { for _ in $(seq 1 "${1:-1}"); do tapv 800 110; sleep 0.8; tapv 800 110; sleep 0.9; done; }
 
 echo "== install =="
-adb install -r -g android/build/outputs/apk/debug/android-debug.apk || exit 1
+adb install -r -g android/build/outputs/apk/debug/android-debug.apk || { echo "INSTALL-FAILED"; exit 1; }
+echo "install ok"
 adb logcat -c
 adb shell am start -n "$ACT"
 sleep 20

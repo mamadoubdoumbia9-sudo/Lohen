@@ -62,6 +62,7 @@ jobs:
       - name: Collect QA evidence
         if: always()
         run: |
+          rm -rf build-reports/qa
           mkdir -p build-reports/qa
           cp -r /tmp/qa/* build-reports/qa/ 2>/dev/null || true
           # screenshots are evidence, not archives: store them as 50% JPEGs
