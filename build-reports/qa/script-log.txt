@@ -1,0 +1,457 @@
++ adb wait-for-device
++ timeout 300 command adb wait-for-device
+timeout: failed to run command ‘command’: No such file or directory
++ boot=0
++ '[' 0 -lt 420 ']'
+++ tr -d '\r'
+++ adb shell getprop sys.boot_completed
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 5 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 10 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 15 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 20 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 25 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 30 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 35 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 40 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 45 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 50 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 55 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 60 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 65 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 70 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 75 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 80 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 85 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 90 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 95 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 100 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 105 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 110 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 115 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 120 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 125 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 130 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 135 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 140 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 145 -lt 420 ']'
+++ tr -d '\r'
+++ adb shell getprop sys.boot_completed
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 150 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 155 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 160 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 165 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 170 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 175 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 180 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 185 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 190 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 195 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 200 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 205 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 210 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 215 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 220 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 225 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 230 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 235 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 240 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 245 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 250 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 255 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 260 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 265 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 270 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 275 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 280 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 285 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 290 -lt 420 ']'
+++ tr -d '\r'
+++ adb shell getprop sys.boot_completed
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 295 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 300 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 305 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 310 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 315 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 320 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 325 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 330 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 335 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 340 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 345 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 350 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 355 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 360 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 365 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 370 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 375 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 380 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 385 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 390 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 395 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 400 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 405 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 410 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 415 -lt 420 ']'
+++ adb shell getprop sys.boot_completed
+++ tr -d '\r'
++ '[' '' = 1 ']'
++ sleep 5
++ '[' 420 -lt 420 ']'
++ echo 'boot_completed after 420s'
+boot_completed after 420s
++ adb shell input keyevent 82
++ timeout 300 command adb shell input keyevent 82
+timeout: failed to run command ‘command’: No such file or directory
++ true
+++ adb shell wm size
+++ timeout 300 command adb shell wm size
+++ tr -d '\r'
+++ awk '{print $3}'
+timeout: failed to run command ‘command’: No such file or directory
++ SIZE=
++ DW=
++ DH=
++ LW=
++ LH=
+++ awk -v w= -v h= 'BEGIN{sw=w/1600; sh=h/900; print (sw<sh?sw:sh)}'
++ SCALE=0
+++ awk -v w= -v s=0 'BEGIN{print (w-1600*s)/2}'
++ OX=0
+++ awk -v h= -v s=0 'BEGIN{print (h-900*s)/2}'
++ OY=0
++ echo 'device x -> landscape x scale=0 offset=0,0'
+device x -> landscape x scale=0 offset=0,0
++ echo '== install =='
+== install ==
++ adb install -r -g android/build/outputs/apk/debug/android-debug.apk
++ timeout 300 command adb install -r -g android/build/outputs/apk/debug/android-debug.apk
+timeout: failed to run command ‘command’: No such file or directory
++ echo INSTALL-FAILED
+INSTALL-FAILED
++ exit 1
