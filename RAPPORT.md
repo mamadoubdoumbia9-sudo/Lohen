@@ -25,7 +25,7 @@ l'état des énigmes. Écran paramètres (volumes, vitesse du texte).
 | Build | Taille mesurée | Où |
 |---|---|---|
 | Léger (assets compressés) | ~12 Mio | `dist/PourLohen-debug.apk` |
-| **Complet** (cinématiques, HD audio, HD art) | **1 273 516 082 octets (1,19 Gio)** | Release `full-v3`, `PourLohen-full-debug.apk`, sha256 `aafaee73…` |
+| **Complet** (cinématiques, HD audio, HD art) | **1 273 516 082 octets (1,19 Gio)** | Release `full-v4`, `PourLohen-full-debug.apk`, sha256 `aafaee73…` |
 
 Le build complet regroupe : 7 cinématiques pré-rendues 1920×1080 à 20 i/s
 (721 Mio, parallaxe par tranches de profondeur, lumière volumétrique,
@@ -43,14 +43,17 @@ l'exécution.
 - **Installation et lancement sur émulateur Android 30 x86_64** à chaque
   push du pipeline QA : vérifié — le jeu boote et répond (preuves
   `build-reports/qa/`).
-- **Parcours scénarisé complet** (45 captures + logcat) : les chapitres
-  1→3 résolus mécaniquement bout à bout à chaque run ; le chapitre 4 est
-  passé après correction du script de QA ; le correctif des lanternes du
-  chapitre 2 a permis d'atteindre l'écran de la lettre. Les 14 jalons
-  (chapter-enter/complete, letter-open, letter-end) sont désormais
-  journalisés et vérifiés automatiquement par la CI ; la dernière
-  validation complète de ce verrou teste au moment de l'écriture du
-  rapport était en cours sur le dernier pipeline.
+- **Parcours scénarisé complet — VERT** : sur une seule exécution
+  d'émulateur réel, le jeu a été installé, lancé, et les six énigmes ont
+  été résolues dans l'ordre par de vrais événements tactiles injectés,
+  puis la lettre s'est ouverte et a été lue jusqu'au bout. Les 14 jalons
+  journalisés (`chapter-enter/complete` ×6 + `letter-open` +
+  `letter-end`) sont tous présents dans le logcat de la CI
+  (`build-reports/qa/milestones.txt` + `missing-milestones.txt` =
+  « all milestones reached »), le processus était vivant à la fin,
+  zéro exception fatale. La capture `44-letter-closing` montre la carte
+  finale affichant « je t'aime ❤️ » puis « j'espère que tu as apprécié
+  mon cadeau ».
 - **Regards visuels** des captures : fond correct, personnages visibles,
   HUD, énigmes à l'écran, lettre affichée — inspectés, jamais supposés
   d'après les noms de fichiers.
